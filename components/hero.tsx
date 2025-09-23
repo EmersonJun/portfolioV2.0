@@ -24,7 +24,7 @@ export function Hero() {
           <div className={`space-y-8 ${mounted ? "animate-fade-in-up" : "opacity-0"}`}>
             <div className="flex items-center gap-6 mb-8">
               <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-primary/20 bg-card">
-                <img src="/professional-headshot.png" alt="Foto do perfil" className="w-full h-full object-cover" />
+                <img src="/EU.png" alt="Foto do perfil" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h1 className="text-4xl lg:text-6xl font-bold text-balance">Emerson Junior</h1>
@@ -94,7 +94,7 @@ export function Hero() {
                   {`{`}
                 </div>
                 <div className="ml-4">
-                  <span className="text-green-400">name</span>: <span className="text-orange-300">'Seu Nome'</span>,
+                  <span className="text-green-400">name</span>: <span className="text-orange-300">'Emerson Junior'</span>,
                 </div>
                 <div className="ml-4">
                   <span className="text-green-400">role</span>:{" "}
@@ -108,8 +108,8 @@ export function Hero() {
                   <span className="text-orange-300">'TypeScript'</span>,
                 </div>
                 <div className="ml-8">
-                  <span className="text-orange-300">'Node.js'</span>, <span className="text-orange-300">'Python'</span>,{" "}
-                  <span className="text-orange-300">'PostgreSQL'</span>
+                  <span className="text-orange-300">'SAP'</span>, <span className="text-orange-300">'Python'</span>,{" "}
+                  <span className="text-orange-300">'java'</span>
                 </div>
                 <div className="ml-4">],</div>
                 <div className="ml-4">

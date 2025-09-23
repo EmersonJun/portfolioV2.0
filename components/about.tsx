@@ -41,8 +41,8 @@ export function About() {
                   "PostgreSQL",
                   "MongoDB",
                   "Git",
-                  "Docker",
-                  "AWS",
+                  "kotlin",
+                  "java",
                 ].map((tech) => (
                   <div key={tech} className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
