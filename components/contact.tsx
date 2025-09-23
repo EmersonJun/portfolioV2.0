@@ -1,33 +1,10 @@
 "use client"
-
-import type React from "react"
-
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, MapPin, Phone } from "lucide-react"
 
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Aqui você implementaria o envio do formulário
-    console.log("Form submitted:", formData)
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
-
   return (
     <section id="contact" className="py-20 px-6">
       <div className="container mx-auto">
@@ -53,7 +30,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-muted-foreground">Emersonnjunior2006@gmail.com</p>
+                      <p className="text-muted-foreground">seu@email.com</p>
                     </div>
                   </div>
 
@@ -63,7 +40,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium">Telefone</p>
-                      <p className="text-muted-foreground">+55 (41) 98728-3543</p>
+                      <p className="text-muted-foreground">+55 (11) 99999-9999</p>
                     </div>
                   </div>
 
@@ -82,14 +59,16 @@ export function Contact() {
 
             {/* Formulário */}
             <div>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formsubmit.co/emersonnjunior2006@gmail.com" method="POST" className="space-y-6">
+                <input type="hidden" name="_subject" value="Nova mensagem do portfólio!" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+
                 <div>
                   <Input
                     type="text"
                     name="name"
                     placeholder="Seu nome"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                     className="bg-card border-border focus:border-primary"
                   />
@@ -100,8 +79,6 @@ export function Contact() {
                     type="email"
                     name="email"
                     placeholder="Seu email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                     className="bg-card border-border focus:border-primary"
                   />
@@ -111,8 +88,6 @@ export function Contact() {
                   <Textarea
                     name="message"
                     placeholder="Sua mensagem"
-                    value={formData.message}
-                    onChange={handleChange}
                     required
                     rows={5}
                     className="bg-card border-border focus:border-primary resize-none"
