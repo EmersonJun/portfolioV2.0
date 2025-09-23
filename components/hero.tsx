@@ -24,7 +24,7 @@ export function Hero() {
           <div className={`space-y-8 ${mounted ? "animate-fade-in-up" : "opacity-0"}`}>
             <div className="flex items-center gap-6 mb-8">
               <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-primary/20 bg-card">
-                <img src="/EU.png" alt="Foto do perfil" className="w-full h-full object-cover" />
+                <img src="/EU.jpeg" alt="Foto do perfil" className="w-full h-full object-cover" />
               </div>
               <div>
                 <h1 className="text-4xl lg:text-6xl font-bold text-balance">Emerson Junior</h1>
