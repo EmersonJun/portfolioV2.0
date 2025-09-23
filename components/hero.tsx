@@ -27,7 +27,7 @@ export function Hero() {
                 <img src="/professional-headshot.png" alt="Foto do perfil" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h1 className="text-4xl lg:text-6xl font-bold text-balance">Seu Nome</h1>
+                <h1 className="text-4xl lg:text-6xl font-bold text-balance">Emerson Junior</h1>
                 <h2 className="text-xl lg:text-2xl text-primary font-medium">Desenvolvedor Full Stack</h2>
               </div>
             </div>
