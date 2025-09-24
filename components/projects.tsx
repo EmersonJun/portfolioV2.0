@@ -10,7 +10,7 @@ export function Projects() {
       title: "E-commerce Platform",
       description:
         "Plataforma de e-commerce completa com sistema de pagamentos, gerenciamento de produtos e dashboard administrativo. Construída com foco em performance e experiência do usuário.",
-      image: "/Pokedex",
+      image: "/Pokedex.png",
       technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
       github: "https://github.com",
       live: "https://example.com",
@@ -19,7 +19,7 @@ export function Projects() {
       title: "Task Management App",
       description:
         "Aplicativo de gerenciamento de tarefas com recursos de colaboração em tempo real, notificações e integração com calendário. Interface intuitiva e responsiva.",
-      image: "/MarioRun",
+      image: "/MarioRun.png",
       technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
       github: "https://github.com",
       live: "https://example.com",
@@ -28,7 +28,7 @@ export function Projects() {
       title: "Weather Dashboard",
       description:
         "Dashboard meteorológico com visualizações interativas, previsões detalhadas e mapas dinâmicos. Integração com múltiplas APIs de clima.",
-      image: "/Relogio",
+      image: "/Relogio.png",
       technologies: ["Vue.js", "D3.js", "Express", "Redis"],
       github: "https://github.com",
       live: "https://example.com",
