@@ -30,8 +30,8 @@ export function Projects() {
         "Dashboard meteorológico com visualizações interativas, previsões detalhadas e mapas dinâmicos. Integração com múltiplas APIs de clima.",
       image: "/Relogio.png",
       technologies: ["Html", "CSS", "Js"],
-      github: "https://github.com",
-      live: "https://example.com",
+      github: "https://github.com/EmersonJun/relogio-digital",
+      live: "https://relogio-project-ejun.netlify.app/",
     },
   ]
 
