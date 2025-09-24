@@ -7,6 +7,60 @@ import { Button } from "@/components/ui/button"
 export function Projects() {
   const projects = [
     {
+      title: "Pokedex",
+      description:
+        "Pokedex interativa fieta tom html, css e js ultilizando da pokeAPI para maior interatividade com o usuario.",
+      image: "/Pokedex.png",
+      technologies: ["Html", "CSS", "Js"],
+      github: "https://github.com/EmersonJun/pokedex",
+      live: "https://pokedex-project-ejun.netlify.app/",
+    },
+    {
+      title: "Mario Run",
+      image: "/MarioRun.png",
+      description:
+        "Web-based game inspired by the classic Mario. Developed with JavaScript, HTML, and CSS, focusing on smooth gameplay.",
+      technologies: ["Html", "CSS", "Js"],
+      github: "https://github.com/EmersonJun/mario",
+      live: "https://mariorun-project-ejun.netlify.app/",
+    },
+    {
+      title: "Relogio digital",
+      description:
+        "Pagina web que replica perfeitamente um relogio digital.",
+      image: "/Relogio.png",
+      technologies: ["Html", "CSS", "Js"],
+      github: "https://github.com/EmersonJun/relogio-digital",
+      live: "https://relogio-project-ejun.netlify.app/",
+    },
+    {
+      title: "Conversor de moedas",
+      description:
+        "Sistema web que ultiliza de API para fazer a convercao de valores de dinheiro.",
+      image: "/Conversor.png",
+      technologies: ["Html", "CSS", "Js"],
+      github: "https://github.com/EmersonJun/Conversor-De-Moedas",
+      live: "https://conversor-project-ejun.netlify.app/",
+    },
+    {
+      title: "Mario Run",
+      image: "/MarioRun.png",
+      description:
+        "Web-based game inspired by the classic Mario. Developed with JavaScript, HTML, and CSS, focusing on smooth gameplay.",
+      technologies: ["Html", "CSS", "Js"],
+      github: "https://github.com/EmersonJun/mario",
+      live: "https://mariorun-project-ejun.netlify.app/",
+    },
+    {
+      title: "Weather Dashboard",
+      description:
+        "Dashboard meteorológico com visualizações interativas, previsões detalhadas e mapas dinâmicos. Integração com múltiplas APIs de clima.",
+      image: "/Relogio.png",
+      technologies: ["Html", "CSS", "Js"],
+      github: "https://github.com/EmersonJun/relogio-digital",
+      live: "https://relogio-project-ejun.netlify.app/",
+    },
+    {
       title: "E-commerce Platform",
       description:
         "Plataforma de e-commerce completa com sistema de pagamentos, gerenciamento de produtos e dashboard administrativo. Construída com foco em performance e experiência do usuário.",
@@ -23,6 +77,15 @@ export function Projects() {
       technologies: ["Html", "CSS", "Js"],
       github: "https://github.com/EmersonJun/mario",
       live: "https://mariorun-project-ejun.netlify.app/",
+    },
+    {
+      title: "Weather Dashboard",
+      description:
+        "Dashboard meteorológico com visualizações interativas, previsões detalhadas e mapas dinâmicos. Integração com múltiplas APIs de clima.",
+      image: "/Relogio.png",
+      technologies: ["Html", "CSS", "Js"],
+      github: "https://github.com/EmersonJun/relogio-digital",
+      live: "https://relogio-project-ejun.netlify.app/",
     },
     {
       title: "Weather Dashboard",
