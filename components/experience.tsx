@@ -3,47 +3,48 @@ import { Calendar, MapPin, Briefcase } from "lucide-react"
 export function Experience() {
   const experiences = [
     {
-      period: "2024 — PRESENTE",
-      role: "Desenvolvedor Full Stack Sênior",
-      company: "TechCorp",
-      location: "São Paulo, SP",
+      period: "2025 May – 2025 Nov",
+      role: "Estágio de TI / Suporte SAP",
+      company: "Assumtek",
+      location: "Curitiba, PR",
       description:
-        "Construo e mantenho componentes críticos usados para construir o frontend da plataforma, trabalhando em toda a stack. Trabalho em estreita colaboração com equipes multifuncionais, incluindo desenvolvedores, designers e gerentes de produto, para implementar e defender as melhores práticas em acessibilidade web.",
-      technologies: ["JavaScript", "TypeScript", "React", "Next.js"],
+      "Atuo no suporte e manutenção de sistemas SAP, auxiliando na resolução de incidentes e demandas dos usuários. Participo do monitoramento de processos e rotinas críticas, além de colaborar com as equipes funcionais e técnicas para garantir a continuidade e eficiência das operações.",
+      technologies: ["SAP", "ABAP (noções)", "SQL", "Excel", "Service Desk"],
       achievements: [
-        "Melhorou a performance da aplicação em 40%",
-        "Liderou equipe de 5 desenvolvedores",
-        "Implementou sistema de design usado por toda empresa",
-      ],
+      "Reduzi em 30% o tempo de resolução de chamados de suporte",
+      "Apoiei na configuração de perfis de usuários e autorizações SAP",
+      "Contribuí para treinamentos internos sobre boas práticas de uso do SAP",
+],
+
     },
     {
-      period: "2022 — 2024",
-      role: "Desenvolvedor Frontend",
-      company: "StartupXYZ",
-      location: "Remote",
+      period: "2019 — 2025 Abr",
+      role: "TI / Gerenciador de estoques",
+      company: "Auto center Camargo",
+      location: "Presencial",
       description:
-        "Desenvolvi interfaces de usuário responsivas e acessíveis para aplicações web modernas. Implementei sistemas de design e componentes reutilizáveis que melhoraram a consistência e eficiência do desenvolvimento.",
-      technologies: ["React", "Vue.js", "Tailwind CSS", "Figma"],
+        "Responsável pela administração do estoque, controle de entradas e saídas de peças e atualização do sistema de gestão. Atuei na manutenção de computadores e suporte técnico interno, garantindo o funcionamento da infraestrutura de TI e otimizando processos administrativos e operacionais.",
+      technologies: ["Excel", "ERP interno", "Manutenção de Hardware", "Redes"],
       achievements: [
-        "Reduziu tempo de desenvolvimento em 30%",
-        "Criou biblioteca de componentes reutilizáveis",
-        "Implementou testes automatizados",
+        "Reduzi perdas de estoque em 20% através de controles mais precisos",
+        "Implementei planilhas automatizadas para gestão de entradas e saídas",
+        "Organizei inventários periódicos, aumentando a acuracidade dos registros"
       ],
     },
-    {
-      period: "2020 — 2022",
-      role: "Desenvolvedor Junior",
-      company: "AgencyABC",
-      location: "Rio de Janeiro, RJ",
-      description:
-        "Trabalhei em projetos diversos para clientes de diferentes setores, desde landing pages até aplicações web complexas. Aprendi a trabalhar com prazos apertados e requisitos em constante mudança.",
-      technologies: ["HTML", "CSS", "JavaScript", "WordPress"],
-      achievements: [
-        "Entregou mais de 50 projetos",
-        "Manteve 98% de satisfação do cliente",
-        "Aprendeu 5 novas tecnologias",
-      ],
-    },
+    // {
+    //   period: "2020 — 2022",
+    //   role: "Desenvolvedor Junior",
+    //   company: "AgencyABC",
+    //   location: "Rio de Janeiro, RJ",
+    //   description:
+    //     "Trabalhei em projetos diversos para clientes de diferentes setores, desde landing pages até aplicações web complexas. Aprendi a trabalhar com prazos apertados e requisitos em constante mudança.",
+    //   technologies: ["HTML", "CSS", "JavaScript", "WordPress"],
+    //   achievements: [
+    //     "Entregou mais de 50 projetos",
+    //     "Manteve 98% de satisfação do cliente",
+    //     "Aprendeu 5 novas tecnologias",
+    //   ],
+    // },
   ]
 
   return (

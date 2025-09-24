@@ -4,28 +4,21 @@ export function About() {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">
-            Sobre <span className="text-gradient">Mim</span>
+            About <span className="text-gradient">Me</span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground text-pretty">
-                Sou um desenvolvedor apaixonado por criar experiências digitais acessíveis e pixel-perfect que combinam
-                design inteligente com engenharia robusta. Meu trabalho favorito está na interseção entre design e
-                desenvolvimento, criando experiências que não apenas impressionam visualmente, mas são meticulosamente
-                construídas para performance e usabilidade.
+                My name is Emerson Junior and I have been passionate about technology since childhood. I grew up exploring the world of games and became fascinated by how things work behind the screens. This sparked my interest in programming, where I found a way to transform ideas into digital solutions.
               </p>
 
               <p className="text-lg text-muted-foreground text-pretty">
-                Atualmente, trabalho como Desenvolvedor Full Stack, especializando-me em acessibilidade. Contribuo para
-                a criação e manutenção de componentes de UI que alimentam plataformas modernas, garantindo que nossos
-                produtos atendam aos padrões de acessibilidade web e melhores práticas para oferecer uma experiência de
-                usuário inclusiva.
+                Currently, I am focused on advancing in the field of software development, constantly learning new languages, techniques, and tools. My goal is to create creative and efficient solutions, always aiming to solve real problems and bring innovation..
               </p>
 
               <p className="text-lg text-muted-foreground text-pretty">
-                No passado, tive a oportunidade de desenvolver software em uma variedade de configurações — desde
-                agências de publicidade e grandes corporações até start-ups e pequenos estúdios de produtos digitais.
+                I believe continuous learning is essential for professional growth, and I am always seeking new challenges that allow me to improve my skills. For me, technology is more than a profession — it is a passion that motivates me to keep evolving.
               </p>
             </div>
 
@@ -43,6 +36,9 @@ export function About() {
                   "Git",
                   "kotlin",
                   "java",
+                  "PHP",
+                  "C++",
+                  "C#",
                 ].map((tech) => (
                   <div key={tech} className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>

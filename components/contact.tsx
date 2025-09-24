@@ -30,7 +30,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-muted-foreground">seu@email.com</p>
+                      <p className="text-muted-foreground">Emersonnjunior2006@gmail.com</p>
                     </div>
                   </div>
 
@@ -40,7 +40,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium">Telefone</p>
-                      <p className="text-muted-foreground">+55 (11) 99999-9999</p>
+                      <p className="text-muted-foreground">+55 (41) 98728-3543</p>
                     </div>
                   </div>
 
