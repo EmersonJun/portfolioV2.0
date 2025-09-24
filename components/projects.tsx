@@ -11,25 +11,25 @@ export function Projects() {
       description:
         "Plataforma de e-commerce completa com sistema de pagamentos, gerenciamento de produtos e dashboard administrativo. Construída com foco em performance e experiência do usuário.",
       image: "/Pokedex.png",
-      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-      github: "https://github.com",
-      live: "https://example.com",
+      technologies: ["Html", "CSS", "Js"],
+      github: "https://github.com/EmersonJun/pokedex",
+      live: "https://pokedex-project-ejun.netlify.app/",
     },
     {
-      title: "Task Management App",
-      description:
-        "Aplicativo de gerenciamento de tarefas com recursos de colaboração em tempo real, notificações e integração com calendário. Interface intuitiva e responsiva.",
+      title: "Mario Run",
       image: "/MarioRun.png",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "https://github.com",
-      live: "https://example.com",
+      description:
+        "Web-based game inspired by the classic Mario. Developed with JavaScript, HTML, and CSS, focusing on smooth gameplay.",
+      technologies: ["Html", "CSS", "Js"],
+      github: "https://github.com/EmersonJun/mario",
+      live: "https://mariorun-project-ejun.netlify.app/",
     },
     {
       title: "Weather Dashboard",
       description:
         "Dashboard meteorológico com visualizações interativas, previsões detalhadas e mapas dinâmicos. Integração com múltiplas APIs de clima.",
       image: "/Relogio.png",
-      technologies: ["Vue.js", "D3.js", "Express", "Redis"],
+      technologies: ["Html", "CSS", "Js"],
       github: "https://github.com",
       live: "https://example.com",
     },
