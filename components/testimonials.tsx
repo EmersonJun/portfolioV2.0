@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button"
 export function Testimonials() {
   const testimonials = [
     {
-      name: "Thaynara Mafra",
+      name: "Taynara Mafra",
       role: "Estudande",
       company: "Up",
-      image: "/professional-woman-headshot.png",
+      image: "/Tay.png",
       content:
         "Trabalhar com o Emerson é muito bom. Ele é uma pessoa prestativa, sempre disposto a ajudar quem precisa. Além disso, é direto no que faz e não enrola, o que facilita muito o dia a dia. Ter alguém como ele na equipe torna o ambiente mais leve, organizado e produtivo.",
       rating: 5,
@@ -20,7 +20,7 @@ export function Testimonials() {
       name: "João Ribas",
       role: "Product Owner",
       company: "Assumtek",
-      image: "/professional-man-headshot.png",
+      image: "/Joao.png",
       content:
         "Tive a oportunidade de trabalhar com o Emerson e essa experiência foi muito enriquecedora, pois ele sempre se mostrou colaborativo, disposto a apoiar os colegas e explicar processos de forma clara e paciente. Além de ser dedicado e esforçado, contribui para um ambiente de trabalho mais leve e descontraído, demonstrando honestidade, profissionalismo e sendo um colega de equipe em quem se pode confiar.",
       rating: 5,
@@ -30,7 +30,7 @@ export function Testimonials() {
       name: "Guilherme Dias",
       role: "Product and Project Owner",
       company: "DigitalFlow",
-      image: "/professional-woman-headshot-business.png",
+      image: "/Gui.png",
       content:
         "Profissional extremamente competente e proativo. Não apenas desenvolveu o que pedimos, mas também sugeriu melhorias que tornaram nosso produto muito mais robusto. Parceria de longo prazo garantida!",
       rating: 5,
@@ -40,7 +40,7 @@ export function Testimonials() {
       name: "Luiz Ricardo",
       role: "Testes",
       company: "MUVEX",
-      image: "/professional-man-headshot-startup.jpg",
+      image: "/Luiz.jpg",
       content:
         "Desenvolvedor full-stack completo que entende tanto de frontend quanto backend. Criou uma arquitetura escalável que nos permitiu crescer rapidamente. Excelente investimento para nossa startup.",
       rating: 5,

@@ -81,7 +81,7 @@ export function Projects() {
       title: "Portifolio de Design",
       description:
         "Portifolio de design basico feito para treino de programacao web.",
-      image: "/Design.png",
+      image: "/design.png",
       technologies: ["Html", "CSS", "Js"],
       github: "https://github.com/VictorPisani/Portifolio-Design",
       live: "https://relogio-project-ejun.netlify.app/",
