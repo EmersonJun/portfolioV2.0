@@ -78,22 +78,21 @@ export function Projects() {
       github: "https://github.com/EmersonJun/ApiAcademy-main-End-main",
     },
     {
-      title: "Weather Dashboard",
+      title: "Portifolio de Design",
       description:
-        "Dashboard meteorológico com visualizações interativas, previsões detalhadas e mapas dinâmicos. Integração com múltiplas APIs de clima.",
-      image: "/Relogio.png",
+        "Portifolio de design basico feito para treino de programacao web.",
+      image: "/Design.png",
       technologies: ["Html", "CSS", "Js"],
-      github: "https://github.com/EmersonJun/relogio-digital",
+      github: "https://github.com/VictorPisani/Portifolio-Design",
       live: "https://relogio-project-ejun.netlify.app/",
     },
     {
-      title: "Weather Dashboard",
+      title: "Cassino Virtual",
       description:
-        "Dashboard meteorológico com visualizações interativas, previsões detalhadas e mapas dinâmicos. Integração com múltiplas APIs de clima.",
+        "Cassino virtual feito para um trabalho final de semestre completamente em java.",
       image: "/Relogio.png",
-      technologies: ["Html", "CSS", "Js"],
-      github: "https://github.com/EmersonJun/relogio-digital",
-      live: "https://relogio-project-ejun.netlify.app/",
+      technologies: ["Java"],
+      github: "https://github.com/EmersonJun/Trabalho-De-Java-2",
     },
   ]
 
@@ -160,6 +159,7 @@ export function Projects() {
                               Código
                             </a>
                           </Button>
+                          {project.live && (
                           <Button
                             size="sm"
                             className="bg-primary text-primary-foreground hover:bg-accent text-xs"
@@ -170,6 +170,7 @@ export function Projects() {
                               Ver Projeto
                             </a>
                           </Button>
+                        )}
                         </div>
                       </div>
                     </div>

@@ -43,7 +43,7 @@ export function Skills() {
       bgColor: "bg-green-400/10",
       borderColor: "border-green-400/20",
       skills: [
-        { name: "Node.js", level: 85, icon: "🟢" },
+        { name: "Node.js", level: 50, icon: "🟢" },
         { name: "Python", level: 80, icon: "🐍" },
         { name: "Java", level: 82, icon: "🐘" },
         { name: "C# / C++", level: 78, icon: "🍃" },
