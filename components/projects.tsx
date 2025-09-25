@@ -90,7 +90,7 @@ export function Projects() {
       title: "Cassino Virtual",
       description:
         "Cassino virtual feito para um trabalho final de semestre completamente em java.",
-      image: "/Relogio.png",
+      image: "/",
       technologies: ["Java"],
       github: "https://github.com/EmersonJun/Trabalho-De-Java-2",
     },

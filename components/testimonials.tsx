@@ -9,7 +9,7 @@ export function Testimonials() {
     {
       name: "Taynara Mafra",
       role: "Estudande",
-      company: "Up",
+      company: "Universidade Positivo",
       image: "/Tay.png",
       content:
         "Trabalhar com o Emerson é muito bom. Ele é uma pessoa prestativa, sempre disposto a ajudar quem precisa. Além disso, é direto no que faz e não enrola, o que facilita muito o dia a dia. Ter alguém como ele na equipe torna o ambiente mais leve, organizado e produtivo.",
@@ -29,7 +29,7 @@ export function Testimonials() {
     {
       name: "Guilherme Dias",
       role: "Product and Project Owner",
-      company: "DigitalFlow",
+      company: "Assumtek",
       image: "/Gui.png",
       content:
         "Profissional extremamente competente e proativo. Não apenas desenvolveu o que pedimos, mas também sugeriu melhorias que tornaram nosso produto muito mais robusto. Parceria de longo prazo garantida!",
@@ -39,7 +39,7 @@ export function Testimonials() {
     {
       name: "Luiz Ricardo",
       role: "Testes",
-      company: "MUVEX",
+      company: "Assumtek",
       image: "/Luiz.png",
       content:
         "Desenvolvedor full-stack completo que entende tanto de frontend quanto backend. Criou uma arquitetura escalável que nos permitiu crescer rapidamente. Excelente investimento para nossa startup.",
