@@ -149,10 +149,10 @@ export function Testimonials() {
           <div className="mt-16">
             <p className="text-center text-muted-foreground mb-8">Empresas que confiaram no meu trabalho</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
-              {testimonials.map((testimonial, index) => (
+              {[...new Set(testimonials.map((t) => t.company))].map((company, index) => (
                 <div key={index} className="text-center">
                   <div className="bg-card border border-border rounded-lg p-4 hover:border-primary/30 transition-colors">
-                    <p className="font-semibold text-sm">{testimonial.company}</p>
+                    <p className="font-semibold text-sm">{company}</p>
                   </div>
                 </div>
               ))}
