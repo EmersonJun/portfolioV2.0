@@ -58,7 +58,7 @@ export function Hero() {
             {/* Links sociais */}
             <div className="flex gap-6 pt-4">
               <a
-                href="https://github.com"
+                href="https://github.com/EmersonJun"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -66,14 +66,14 @@ export function Hero() {
                 <Github className="h-6 w-6" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/emerson-jun"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="mailto:seu@email.com" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="mailto:emersonnjunior2006@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="h-6 w-6" />
               </a>
             </div>

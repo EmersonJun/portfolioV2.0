@@ -71,7 +71,7 @@ export function Projects() {
     },
     {
       title: "API de Academia",
-      image: "/",
+      image: "/Academia.png",
       description:
         "Api feita para cadastrar equipamentos de academia, listalos e fazer calculos de valores.",
       technologies: ["C#", "CSS"],

@@ -24,7 +24,7 @@ export function Testimonials() {
       content:
         "Tive a oportunidade de trabalhar com o Emerson e essa experiência foi muito enriquecedora, pois ele sempre se mostrou colaborativo, disposto a apoiar os colegas e explicar processos de forma clara e paciente. Além de ser dedicado e esforçado, contribui para um ambiente de trabalho mais leve e descontraído, demonstrando honestidade, profissionalismo e sendo um colega de equipe em quem se pode confiar.",
       rating: 5,
-      project: "Trabalhos gerais",
+      project: "Assumtek",
     },
     {
       name: "Guilherme Dias",
@@ -34,17 +34,17 @@ export function Testimonials() {
       content:
         "Profissional extremamente competente e proativo. Não apenas desenvolveu o que pedimos, mas também sugeriu melhorias que tornaram nosso produto muito mais robusto. Parceria de longo prazo garantida!",
       rating: 5,
-      project: "App Mobile Híbrido",
+      project: "Assumtek",
     },
     {
       name: "Luiz Ricardo",
       role: "Testes",
       company: "MUVEX",
-      image: "/Luiz.jpg",
+      image: "/Luiz.png",
       content:
         "Desenvolvedor full-stack completo que entende tanto de frontend quanto backend. Criou uma arquitetura escalável que nos permitiu crescer rapidamente. Excelente investimento para nossa startup.",
       rating: 5,
-      project: "Plataforma SaaS",
+      project: "Assumtek",
     },
   ]
 
