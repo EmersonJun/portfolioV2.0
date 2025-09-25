@@ -7,28 +7,28 @@ import { Button } from "@/components/ui/button"
 export function Testimonials() {
   const testimonials = [
     {
-      name: "Maria Silva",
-      role: "CEO",
-      company: "TechStart",
+      name: "Thaynara Mafra",
+      role: "Estudande",
+      company: "Up",
       image: "/professional-woman-headshot.png",
       content:
-        "Trabalhar com este desenvolvedor foi uma experiência excepcional. A qualidade do código e a atenção aos detalhes superaram nossas expectativas. Nosso projeto foi entregue no prazo e funcionou perfeitamente desde o primeiro dia.",
+        "Trabalhar com o Emerson é muito bom. Ele é uma pessoa prestativa, sempre disposto a ajudar quem precisa. Além disso, é direto no que faz e não enrola, o que facilita muito o dia a dia. Ter alguém como ele na equipe torna o ambiente mais leve, organizado e produtivo.",
       rating: 5,
-      project: "Plataforma E-commerce",
+      project: "Projetos de Faculdade",
     },
     {
-      name: "João Santos",
-      role: "CTO",
-      company: "InnovaCorp",
+      name: "João Ribas",
+      role: "Product Owner",
+      company: "Assumtek",
       image: "/professional-man-headshot.png",
       content:
-        "Impressionante capacidade técnica e comunicação clara. Conseguiu transformar nossas ideias complexas em uma solução elegante e funcional. Definitivamente recomendaria para qualquer projeto de desenvolvimento web.",
+        "Tive a oportunidade de trabalhar com o Emerson e essa experiência foi muito enriquecedora, pois ele sempre se mostrou colaborativo, disposto a apoiar os colegas e explicar processos de forma clara e paciente. Além de ser dedicado e esforçado, contribui para um ambiente de trabalho mais leve e descontraído, demonstrando honestidade, profissionalismo e sendo um colega de equipe em quem se pode confiar.",
       rating: 5,
-      project: "Dashboard Analytics",
+      project: "Trabalhos gerais",
     },
     {
-      name: "Ana Costa",
-      role: "Product Manager",
+      name: "Guilherme Dias",
+      role: "Product and Project Owner",
       company: "DigitalFlow",
       image: "/professional-woman-headshot-business.png",
       content:
@@ -37,9 +37,9 @@ export function Testimonials() {
       project: "App Mobile Híbrido",
     },
     {
-      name: "Carlos Oliveira",
-      role: "Founder",
-      company: "StartupLab",
+      name: "Luiz Ricardo",
+      role: "Testes",
+      company: "MUVEX",
       image: "/professional-man-headshot-startup.jpg",
       content:
         "Desenvolvedor full-stack completo que entende tanto de frontend quanto backend. Criou uma arquitetura escalável que nos permitiu crescer rapidamente. Excelente investimento para nossa startup.",

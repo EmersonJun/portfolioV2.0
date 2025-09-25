@@ -30,10 +30,10 @@ export function Skills() {
       bgColor: "bg-blue-400/10",
       borderColor: "border-blue-400/20",
       skills: [
-        { name: "React", level: 95, icon: "⚛️" },
-        { name: "Next.js", level: 90, icon: "▲" },
-        { name: "TypeScript", level: 88, icon: "📘" },
-        { name: "Tailwind CSS", level: 92, icon: "🎨" },
+        { name: "React", level: 30, icon: "⚛️" },
+        { name: "Next.js", level: 30, icon: "▲" },
+        { name: "TypeScript", level: 55, icon: "📘" },
+        { name: "HTML / CSS", level: 92, icon: "🎨" },
       ],
     },
     {
@@ -45,8 +45,8 @@ export function Skills() {
       skills: [
         { name: "Node.js", level: 85, icon: "🟢" },
         { name: "Python", level: 80, icon: "🐍" },
-        { name: "PostgreSQL", level: 82, icon: "🐘" },
-        { name: "MongoDB", level: 78, icon: "🍃" },
+        { name: "Java", level: 82, icon: "🐘" },
+        { name: "C# / C++", level: 78, icon: "🍃" },
       ],
     },
     {
@@ -57,9 +57,8 @@ export function Skills() {
       borderColor: "border-purple-400/20",
       skills: [
         { name: "Git", level: 90, icon: "📚" },
-        { name: "Docker", level: 75, icon: "🐳" },
-        { name: "AWS", level: 70, icon: "☁️" },
-        { name: "Figma", level: 85, icon: "🎯" },
+        { name: "Photoshop", level: 85, icon: "🎯" },
+        { name: "Power BI", level: 85, icon: "☁️" },
       ],
     },
   ]
