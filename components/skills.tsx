@@ -139,10 +139,10 @@ export function Skills() {
           {/* Estatísticas adicionais */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { label: "Projetos Concluídos", value: "50+", icon: <Code className="w-5 h-5" /> },
-              { label: "Anos de Experiência", value: "4+", icon: <Zap className="w-5 h-5" /> },
-              { label: "Tecnologias", value: "20+", icon: <Database className="w-5 h-5" /> },
-              { label: "Clientes Satisfeitos", value: "30+", icon: <Smartphone className="w-5 h-5" /> },
+              { label: "Projetos Concluídos", value: "10+", icon: <Code className="w-5 h-5" /> },
+              { label: "Anos de Experiência", value: "2+", icon: <Zap className="w-5 h-5" /> },
+              { label: "Tecnologias", value: "10+", icon: <Database className="w-5 h-5" /> },
+              { label: "Clientes Satisfeitos", value: "1+", icon: <Smartphone className="w-5 h-5" /> },
             ].map((stat, index) => (
               <div
                 key={index}
