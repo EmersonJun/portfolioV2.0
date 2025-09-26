@@ -42,7 +42,7 @@ export function Testimonials() {
       company: "Assumtek",
       image: "/Luiz.png",
       content:
-        "Desenvolvedor full-stack completo que entende tanto de frontend quanto backend. Criou uma arquitetura escalável que nos permitiu crescer rapidamente. Excelente investimento para nossa startup.",
+        "Se eu pudesse descrevê-lo com uma palavra, seria "atencioso." Sempre prestou muito bem seu papel e não é à toa que logo conseguiu subir de cargo dentro da empresa. Jovem e talentoso, se seguir com a constância de aprendizado que sempre demonstrou, vai alçar voos muito altos.",
       rating: 5,
       project: "Assumtek",
     },
