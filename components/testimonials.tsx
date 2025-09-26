@@ -38,11 +38,11 @@ export function Testimonials() {
     },
     {
       name: "Luiz Ricardo",
-      role: "Testes",
+      role: "Product Owner",
       company: "Assumtek",
       image: "/Luiz.png",
       content:
-        "Se eu pudesse descrevê-lo com uma palavra, seria "atencioso." Sempre prestou muito bem seu papel e não é à toa que logo conseguiu subir de cargo dentro da empresa. Jovem e talentoso, se seguir com a constância de aprendizado que sempre demonstrou, vai alçar voos muito altos.",
+        "Se eu pudesse descrevê-lo com uma palavra, seria atencioso. Sempre prestou muito bem seu papel e não é à toa que logo conseguiu subir de cargo dentro da empresa. Jovem e talentoso, se seguir com a constância de aprendizado que sempre demonstrou, vai alçar voos muito altos.",
       rating: 5,
       project: "Assumtek",
     },
