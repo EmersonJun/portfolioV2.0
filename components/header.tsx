@@ -25,7 +25,7 @@ export function Header() {
     // Aqui você pode colocar o link do seu currículo
     const link = document.createElement("a")
     link.href = "/EmersonJunior.pdf" // Substitua pelo caminho do seu currículo
-    link.download = "Curriculo.pdf"
+    link.download = "EmersonJunior.pdf"
     link.click()
   }
 
