@@ -22,9 +22,8 @@ export function Header() {
   }
 
   const downloadResume = () => {
-    // Aqui você pode colocar o link do seu currículo
     const link = document.createElement("a")
-    link.href = "/EmersonJunior.pdf" // Substitua pelo caminho do seu currículo
+    link.href = "/EmersonJunior.pdf"
     link.download = "Curriculo.pdf"
     link.click()
   }
@@ -37,44 +36,35 @@ export function Header() {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
+          {/* Logo e tema */}
           <div className="flex items-center gap-3">
             <div className="text-xl font-bold text-gradient">{"<Dev />"}</div>
             <ThemeToggle />
           </div>
 
+          {/* Navegação */}
           <div className="hidden md:flex items-center space-x-6">
-            <button
-              onClick={() => scrollToSection("about")}
-              className="link-hover text-muted-foreground hover:text-primary text-sm"
-            >
+            <button onClick={() => scrollToSection("about")} className="link-hover text-muted-foreground hover:text-primary text-sm">
               Sobre
             </button>
-            <button
-              onClick={() => scrollToSection("education")}
-              className="link-hover text-muted-foreground hover:text-primary text-sm"
-            >
+            <button onClick={() => scrollToSection("education")} className="link-hover text-muted-foreground hover:text-primary text-sm">
               Educação
             </button>
-            <button
-              onClick={() => scrollToSection("experience")}
-              className="link-hover text-muted-foreground hover:text-primary text-sm"
-            >
+            <button onClick={() => scrollToSection("experience")} className="link-hover text-muted-foreground hover:text-primary text-sm">
               Experiência
             </button>
-            <button
-              onClick={() => scrollToSection("projects")}
-              className="link-hover text-muted-foreground hover:text-primary text-sm"
-            >
+            <button onClick={() => scrollToSection("projects")} className="link-hover text-muted-foreground hover:text-primary text-sm">
               Projetos
             </button>
-            <button
-              onClick={() => scrollToSection("testimonials")}
-              className="link-hover text-muted-foreground hover:text-primary text-sm"
-            >
+            <button onClick={() => scrollToSection("testimonials")} className="link-hover text-muted-foreground hover:text-primary text-sm">
               Testemunhos
             </button>
+            <button onClick={() => scrollToSection("contact")} className="link-hover text-muted-foreground hover:text-primary text-sm">
+              Contato
+            </button>
+          </div>
 
-
+          {/* Ações */}
           <div className="flex items-center gap-2">
             <Button
               variant="outline"
