@@ -24,7 +24,7 @@ export function Experience() {
       location: "Presencial",
       description:
         "Responsável pela administração do estoque, controle de entradas e saídas de peças e atualização do sistema de gestão. Atuei na manutenção de computadores e suporte técnico interno, garantindo o funcionamento da infraestrutura de TI e otimizando processos administrativos e operacionais.",
-      technologies: ["Excel", "ERP interno", "Manutenção de Hardware", "Redes"],
+      technologies: ["Excel", "Manutenção de Hardware", "Redes"],
       achievements: [
         "Reduzi perdas de estoque em 20% através de controles mais precisos",
         "Implementei planilhas automatizadas para gestão de entradas e saídas",
