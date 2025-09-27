@@ -73,13 +73,13 @@ export function Header() {
             >
               Testemunhos
             </button>
-            {/* <button
+            { <button
               onClick={() => scrollToSection("contact")}
               className="link-hover text-muted-foreground hover:text-primary text-sm"
             >
               Contato
             </button>
-          </div> */}
+          </div> }
 
           <div className="flex items-center gap-2">
             <Button
