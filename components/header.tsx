@@ -24,7 +24,7 @@ export function Header() {
   const downloadResume = () => {
     const link = document.createElement("a")
     link.href = "/EmersonJunior.pdf"
-    link.download = "Curriculo.pdf"
+    link.download = "EmersonJunior.pdf"
     link.click()
   }
 
@@ -58,9 +58,6 @@ export function Header() {
             </button>
             <button onClick={() => scrollToSection("testimonials")} className="link-hover text-muted-foreground hover:text-primary text-sm">
               Testemunhos
-            </button>
-            <button onClick={() => scrollToSection("contact")} className="link-hover text-muted-foreground hover:text-primary text-sm">
-              Contato
             </button>
           </div>
 
