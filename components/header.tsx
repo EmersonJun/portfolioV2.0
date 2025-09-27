@@ -24,7 +24,7 @@ export function Header() {
   const downloadResume = () => {
     // Aqui você pode colocar o link do seu currículo
     const link = document.createElement("a")
-    link.href = "/curriculo.pdf" // Substitua pelo caminho do seu currículo
+    link.href = "/EmersonJunior.pdf" // Substitua pelo caminho do seu currículo
     link.download = "Curriculo.pdf"
     link.click()
   }
@@ -73,13 +73,13 @@ export function Header() {
             >
               Testemunhos
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection("contact")}
               className="link-hover text-muted-foreground hover:text-primary text-sm"
             >
               Contato
             </button>
-          </div>
+          </div> */}
 
           <div className="flex items-center gap-2">
             <Button
