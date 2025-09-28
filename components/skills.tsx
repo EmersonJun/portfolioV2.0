@@ -1,6 +1,7 @@
 "use client"
 
 import { Globe, Server, Wrench, Users, Award, BookOpen } from "lucide-react"
+import { Code, Zap, Database, Smartphone } from "lucide-react"
 
 export function Skills() {
   const skillCategories = [
