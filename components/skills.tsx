@@ -138,6 +138,24 @@ export function Skills() {
               </div>
             ))}
           </div>
+          {/* Estatísticas adicionais */}
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { label: "Projetos Concluídos", value: "10+", icon: <Code className="w-5 h-5" /> },
+              { label: "Anos de Experiência", value: "2+", icon: <Zap className="w-5 h-5" /> },
+              { label: "Tecnologias", value: "10+", icon: <Database className="w-5 h-5" /> },
+              { label: "Clientes Satisfeitos", value: "1+", icon: <Smartphone className="w-5 h-5" /> },
+            ].map((stat, index) => (
+              <div
+                key={index}
+                className="text-center p-6 bg-card border border-border rounded-xl hover:border-primary/50 transition-colors"
+              >
+                <div className="flex justify-center mb-2 text-primary">{stat.icon}</div>
+                <div className="text-2xl font-bold text-foreground mb-1">{stat.value}</div>
+                <div className="text-sm text-muted-foreground">{stat.label}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
