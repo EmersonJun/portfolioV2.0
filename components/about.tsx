@@ -10,15 +10,15 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground text-pretty">
-                My name is Emerson Junior and I have been passionate about technology since childhood. I grew up exploring the world of games and became fascinated by how things work behind the screens. This sparked my interest in programming, where I found a way to transform ideas into digital solutions.
+                Meu nome é Emerson Junior e sou apaixonado por tecnologia desde a infância. Cresci explorando o mundo dos games e me fascinei por entender como as coisas funcionam por trás das telas. Isso despertou meu interesse pela programação, onde encontrei uma forma de transformar ideias em soluções digitais.
               </p>
 
               <p className="text-lg text-muted-foreground text-pretty">
-                Currently, I am focused on advancing in the field of software development, constantly learning new languages, techniques, and tools. My goal is to create creative and efficient solutions, always aiming to solve real problems and bring innovation..
+                Atualmente, estou focado em evoluir na área de desenvolvimento de software, aprendendo constantemente novas linguagens, técnicas e ferramentas. Meu objetivo é criar soluções criativas e eficientes, sempre com o propósito de resolver problemas reais e trazer inovação.
               </p>
 
               <p className="text-lg text-muted-foreground text-pretty">
-                I believe continuous learning is essential for professional growth, and I am always seeking new challenges that allow me to improve my skills. For me, technology is more than a profession — it is a passion that motivates me to keep evolving.
+                Acredito que o aprendizado contínuo é essencial para o crescimento profissional, e estou sempre em busca de novos desafios que me permitam aprimorar minhas habilidades. Para mim, tecnologia é mais do que uma profissão — é uma paixão que me motiva a continuar evoluindo.
               </p>
             </div>
 
