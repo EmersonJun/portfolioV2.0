@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Download } from "lucide-react"
-
+<link rel="shortcut icon" type="imagex/png" href="/PGM.png"></link>
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
 
