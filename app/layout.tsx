@@ -6,6 +6,9 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Emerson Junior',
+  icons: {
+    icon: "/PGM.png",
+  },
 }
 
 export default function RootLayout({
