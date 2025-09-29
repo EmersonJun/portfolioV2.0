@@ -4,7 +4,7 @@ export function About() {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">
-            About <span className="text-gradient">Me</span>
+            Sobre <span className="text-gradient">Mim</span>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
