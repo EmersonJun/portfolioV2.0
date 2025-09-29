@@ -42,7 +42,7 @@ export function Skills() {
       bgColor: "bg-slate-800/50 dark:bg-slate-800/30",
       borderColor: "border-orange-900/30 dark:border-orange-800/20",
       iconBg: "bg-orange-500/20",
-      skills: ["Scrum", "Kanban", "Agile", "DevOps", "CI/CD", "TDD"],
+      skills: ["Scrum", "Kanban", "Agile", "TDD"],
     },
     {
       title: "Certificações",
@@ -51,7 +51,7 @@ export function Skills() {
       bgColor: "bg-slate-800/50 dark:bg-slate-800/30",
       borderColor: "border-cyan-900/30 dark:border-cyan-800/20",
       iconBg: "bg-cyan-500/20",
-      skills: ["AWS Cloud Practitioner", "Google Analytics", "Scrum Master", "Azure Fundamentals"],
+      skills: ["SAP BTP", "SAP SD", "SAP MM", "Power BI"],
     },
     {
       title: "Soft Skills",
@@ -61,7 +61,6 @@ export function Skills() {
       borderColor: "border-pink-900/30 dark:border-pink-800/20",
       iconBg: "bg-pink-500/20",
       skills: [
-        "Liderança",
         "Comunicação",
         "Resolução de Problemas",
         "Trabalho em Equipe",
