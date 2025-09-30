@@ -3,8 +3,8 @@ import { Calendar, MapPin, Briefcase } from "lucide-react"
 export function Experience() {
   const experiences = [
     {
-      period: "2025 May – 2025 Nov",
-      role: "Estágio de TI / Suporte SAP",
+      period: "2025 Mai – Atualmente",
+      role: "Suporte SAP",
       company: "Assumtek",
       location: "Curitiba, PR",
       description:
