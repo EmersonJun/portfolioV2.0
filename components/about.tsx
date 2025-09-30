@@ -28,7 +28,6 @@ export function About() {
                 {[
                   "JavaScript",
                   "React",
-                  "Next.js",
                   "Python",
                   "PostgreSQL",
                   "MongoDB",
