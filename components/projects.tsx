@@ -16,6 +16,14 @@ export function Projects() {
       live: "https://pokedex-project-ejun.netlify.app/",
     },
     {
+      title: "Dasboard Python",
+      description:
+        "Dashboard para a analise de planilha o exel sobre veiculos automotivos.",
+      image: "/Dash.png",
+      technologies: ["Python"],
+      github: "https://github.com/EmersonJun/Graficos-PYTHON",
+    },
+    {
       title: "Mario Run",
       image: "/MarioRun.png",
       description:
