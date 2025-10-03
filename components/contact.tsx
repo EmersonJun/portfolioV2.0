@@ -63,6 +63,9 @@ export function Contact() {
                 <input type="hidden" name="_subject" value="Nova mensagem do portfólio!" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
+                
+                {/* 👇 Faz voltar para sua própria página */}
+                <input type="hidden" name="_next" value="https://emersonjun.netlify.app/#contact" />
 
                 <div>
                   <Input
