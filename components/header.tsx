@@ -52,8 +52,8 @@ export function Header() {
             <button onClick={() => scrollToSection("experience")} className="link-hover text-muted-foreground hover:text-primary text-sm">
               Experiência
             </button>
-            <button onClick={() => scrollToSection("projects")} className="link-hover text-muted-foreground hover:text-primary text-sm">
-              Projetos
+            <button onClick={() => scrollToSection("skills-section")} className="link-hover text-muted-foreground hover:text-primary text-sm">
+              Competências
             </button>
             <button onClick={() => scrollToSection("testimonials")} className="link-hover text-muted-foreground hover:text-primary text-sm">
               Testemunhos
