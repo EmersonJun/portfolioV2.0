@@ -2,49 +2,9 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, MapPin, Phone, CheckCircle } from "lucide-react"
-import { useState, useEffect } from "react"
+import { Mail, MapPin, Phone } from "lucide-react"
 
 export function Contact() {
-  const [showSuccess, setShowSuccess] = useState(false)
-
-  // Configurar URL de redirecionamento
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const url = `${window.location.origin}${window.location.pathname}?submitted=true#contact`
-      console.log('Redirect URL:', url)
-      setRedirectUrl(url)
-    }
-  }, [])
-
-  // Verificar se voltou do FormSubmit com sucesso
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const urlParams = new URLSearchParams(window.location.search)
-      console.log('Checking URL params:', urlParams.get('submitted'))
-      
-      if (urlParams.get('submitted') === 'true') {
-        console.log('Success! Showing message')
-        setShowSuccess(true)
-        setIsSubmitting(false)
-        
-        // Limpar o parâmetro da URL após um pequeno delay
-        setTimeout(() => {
-          window.history.replaceState({}, '', window.location.pathname + '#contact')
-        }, 100)
-        
-        // Esconder mensagem após 5 segundos
-        setTimeout(() => {
-          setShowSuccess(false)
-        }, 5000)
-      }
-    }
-  }, [])
-
-  const handleSubmit = () => {
-    setIsSubmitting(true)
-  }
-
   return (
     <section id="contact" className="py-20 px-6">
       <div className="container mx-auto">
@@ -56,21 +16,6 @@ export function Contact() {
           <p className="text-lg text-muted-foreground text-center mb-12 text-pretty">
             Se você gostaria de discutir um projeto ou apenas dizer oi, estou sempre disposto a conversar.
           </p>
-
-          {/* Mensagem de Sucesso */}
-          {showSuccess && (
-            <div className="mb-8 p-6 bg-green-500/10 border-2 border-green-500/30 rounded-lg animate-in fade-in slide-in-from-top-4 duration-500">
-              <div className="flex items-center gap-3 text-green-600 dark:text-green-400">
-                <CheckCircle className="h-6 w-6" />
-                <div>
-                  <p className="font-semibold text-lg">Mensagem enviada com sucesso! ✨</p>
-                  <p className="text-sm text-green-600/80 dark:text-green-400/80">
-                    Obrigado pelo contato! Responderei em breve.
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Informações de contato */}
@@ -85,12 +30,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <a 
-                        href="mailto:Emersonnjunior2006@gmail.com"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        Emersonnjunior2006@gmail.com
-                      </a>
+                      <p className="text-muted-foreground">Emersonnjunior2006@gmail.com</p>
                     </div>
                   </div>
 
@@ -100,12 +40,7 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium">Telefone</p>
-                      <a 
-                        href="tel:+5541987283543"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        +55 (41) 98728-3543
-                      </a>
+                      <p className="text-muted-foreground">+55 (41) 98728-3543</p>
                     </div>
                   </div>
 
@@ -124,30 +59,17 @@ export function Contact() {
 
             {/* Formulário */}
             <div>
-              <form 
-                action="https://formsubmit.co/emersonnjunior2006@gmail.com" 
-                method="POST" 
-                className="space-y-6"
-              >
-                {/* Configurações do FormSubmit */}
+              <form action="https://formsubmit.co/emersonnjunior2006@gmail.com" method="POST" className="space-y-6">
                 <input type="hidden" name="_subject" value="Nova mensagem do portfólio!" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input type="hidden" name="_template" value="table" />
-                
-                {/* Redirecionar de volta para a mesma página com parâmetro */}
-                <input type="hidden" name="_next" value="https://emersonjun.netlify.app/?submitted=true#contact" />
-                
-                {/* Anti-spam */}
-                <input type="text" name="_honey" style={{ display: 'none' }} />
 
                 <div>
                   <Input
                     type="text"
                     name="name"
-                    id="name"
                     placeholder="Seu nome"
                     required
-                    minLength={2}
                     className="bg-card border-border focus:border-primary"
                   />
                 </div>
@@ -156,7 +78,6 @@ export function Contact() {
                   <Input
                     type="email"
                     name="email"
-                    id="email"
                     placeholder="Seu email"
                     required
                     className="bg-card border-border focus:border-primary"
@@ -166,19 +87,14 @@ export function Contact() {
                 <div>
                   <Textarea
                     name="message"
-                    id="message"
                     placeholder="Sua mensagem"
                     required
-                    minLength={10}
                     rows={5}
                     className="bg-card border-border focus:border-primary resize-none"
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
-                  className="w-full bg-primary text-primary-foreground hover:bg-accent"
-                >
+                <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-accent">
                   Enviar Mensagem
                 </Button>
               </form>
