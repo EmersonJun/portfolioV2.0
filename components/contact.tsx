@@ -3,8 +3,15 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, MapPin, Phone } from "lucide-react"
+import { useState } from "react"
 
 export function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = () => {
+    setIsSubmitting(true)
+  }
+
   return (
     <section id="contact" className="py-20 px-6">
       <div className="container mx-auto">
@@ -30,7 +37,12 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-muted-foreground">Emersonnjunior2006@gmail.com</p>
+                      <a 
+                        href="mailto:Emersonnjunior2006@gmail.com"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        Emersonnjunior2006@gmail.com
+                      </a>
                     </div>
                   </div>
 
@@ -40,7 +52,12 @@ export function Contact() {
                     </div>
                     <div>
                       <p className="font-medium">Telefone</p>
-                      <p className="text-muted-foreground">+55 (41) 98728-3543</p>
+                      <a 
+                        href="tel:+5541987283543"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +55 (41) 98728-3543
+                      </a>
                     </div>
                   </div>
 
@@ -59,20 +76,43 @@ export function Contact() {
 
             {/* Formulário */}
             <div>
-              <form action="https://formsubmit.co/emersonnjunior2006@gmail.com" method="POST" className="space-y-6">
+              <form 
+                action="https://formsubmit.co/emersonnjunior2006@gmail.com" 
+                method="POST" 
+                className="space-y-6"
+                onSubmit={handleSubmit}
+              >
+                {/* ===== CONFIGURAÇÕES DO FORMSUBMIT ===== */}
+                
+                {/* Assunto do email */}
                 <input type="hidden" name="_subject" value="Nova mensagem do portfólio!" />
+                
+                {/* Desabilitar captcha */}
                 <input type="hidden" name="_captcha" value="false" />
+                
+                {/* Template de tabela (mais organizado) */}
                 <input type="hidden" name="_template" value="table" />
                 
-                {/* 👇 Faz voltar para sua própria página */}
-                <input type="hidden" name="_next" value="https://emersonjun.netlify.app/#contact" />
+                {/* Página de redirecionamento após envio */}
+                <input type="hidden" name="_next" value="https://emersonjun.netlify.app/obrigado.html" />
+                
+                {/* Campo honeypot anti-spam (escondido) */}
+                <input type="text" name="_honey" style={{ display: 'none' }} />
+                
+                {/* Desabilitar autoresposta padrão */}
+                <input type="hidden" name="_autoresponse" value="Obrigado pelo contato! Responderei em breve." />
 
+                {/* ===== CAMPOS DO FORMULÁRIO ===== */}
+                
                 <div>
                   <Input
                     type="text"
                     name="name"
                     placeholder="Seu nome"
                     required
+                    minLength={2}
+                    maxLength={100}
+                    disabled={isSubmitting}
                     className="bg-card border-border focus:border-primary"
                   />
                 </div>
@@ -83,6 +123,17 @@ export function Contact() {
                     name="email"
                     placeholder="Seu email"
                     required
+                    disabled={isSubmitting}
+                    className="bg-card border-border focus:border-primary"
+                  />
+                </div>
+
+                <div>
+                  <Input
+                    type="tel"
+                    name="phone"
+                    placeholder="Seu telefone (opcional)"
+                    disabled={isSubmitting}
                     className="bg-card border-border focus:border-primary"
                   />
                 </div>
@@ -92,13 +143,27 @@ export function Contact() {
                     name="message"
                     placeholder="Sua mensagem"
                     required
+                    minLength={10}
+                    maxLength={1000}
                     rows={5}
+                    disabled={isSubmitting}
                     className="bg-card border-border focus:border-primary resize-none"
                   />
                 </div>
 
-                <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-accent">
-                  Enviar Mensagem
+                <Button 
+                  type="submit" 
+                  className="w-full bg-primary text-primary-foreground hover:bg-accent"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <span className="animate-spin mr-2">⏳</span>
+                      Enviando...
+                    </>
+                  ) : (
+                    "Enviar Mensagem"
+                  )}
                 </Button>
               </form>
             </div>
