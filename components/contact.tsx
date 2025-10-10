@@ -8,6 +8,14 @@ import { useState, useEffect } from "react"
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccess, setShowSuccess] = useState(false)
+  const [redirectUrl, setRedirectUrl] = useState("")
+
+  // Configurar URL de redirecionamento
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setRedirectUrl(`${window.location.origin}${window.location.pathname}?submitted=true#contact`)
+    }
+  }, [])
 
   // Verificar se voltou do FormSubmit com sucesso
   useEffect(() => {
@@ -118,7 +126,7 @@ export function Contact() {
                 <input type="hidden" name="_captcha" value="false" />
                 
                 {/* Redirecionar de volta para a mesma página com parâmetro */}
-                <input type="hidden" name="_next" value="https://emersonjun.netlify.app/?submitted=true#contact" />
+                {redirectUrl && <input type="hidden" name="_next" value={redirectUrl} />}
                 
                 {/* Anti-spam */}
                 <input type="text" name="_honey" style={{ display: 'none' }} />
