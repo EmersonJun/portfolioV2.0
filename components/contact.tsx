@@ -6,9 +6,7 @@ import { Mail, MapPin, Phone, CheckCircle } from "lucide-react"
 import { useState, useEffect } from "react"
 
 export function Contact() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccess, setShowSuccess] = useState(false)
-  const [redirectUrl, setRedirectUrl] = useState("")
 
   // Configurar URL de redirecionamento
   useEffect(() => {
@@ -130,14 +128,14 @@ export function Contact() {
                 action="https://formsubmit.co/emersonnjunior2006@gmail.com" 
                 method="POST" 
                 className="space-y-6"
-                onSubmit={handleSubmit}
               >
                 {/* Configurações do FormSubmit */}
                 <input type="hidden" name="_subject" value="Nova mensagem do portfólio!" />
                 <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
                 
                 {/* Redirecionar de volta para a mesma página com parâmetro */}
-                {redirectUrl && <input type="hidden" name="_next" value={redirectUrl} />}
+                <input type="hidden" name="_next" value="https://emersonjun.netlify.app/?submitted=true#contact" />
                 
                 {/* Anti-spam */}
                 <input type="text" name="_honey" style={{ display: 'none' }} />
@@ -146,10 +144,10 @@ export function Contact() {
                   <Input
                     type="text"
                     name="name"
+                    id="name"
                     placeholder="Seu nome"
                     required
                     minLength={2}
-                    disabled={isSubmitting}
                     className="bg-card border-border focus:border-primary"
                   />
                 </div>
@@ -158,9 +156,9 @@ export function Contact() {
                   <Input
                     type="email"
                     name="email"
+                    id="email"
                     placeholder="Seu email"
                     required
-                    disabled={isSubmitting}
                     className="bg-card border-border focus:border-primary"
                   />
                 </div>
@@ -168,11 +166,11 @@ export function Contact() {
                 <div>
                   <Textarea
                     name="message"
+                    id="message"
                     placeholder="Sua mensagem"
                     required
                     minLength={10}
                     rows={5}
-                    disabled={isSubmitting}
                     className="bg-card border-border focus:border-primary resize-none"
                   />
                 </div>
@@ -180,16 +178,8 @@ export function Contact() {
                 <Button 
                   type="submit" 
                   className="w-full bg-primary text-primary-foreground hover:bg-accent"
-                  disabled={isSubmitting}
                 >
-                  {isSubmitting ? (
-                    <>
-                      <span className="animate-spin mr-2">⏳</span>
-                      Enviando...
-                    </>
-                  ) : (
-                    "Enviar Mensagem"
-                  )}
+                  Enviar Mensagem
                 </Button>
               </form>
             </div>
