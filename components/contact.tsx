@@ -13,22 +13,33 @@ export function Contact() {
   // Configurar URL de redirecionamento
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      setRedirectUrl(`${window.location.origin}${window.location.pathname}?submitted=true#contact`)
+      const url = `${window.location.origin}${window.location.pathname}?submitted=true#contact`
+      console.log('Redirect URL:', url)
+      setRedirectUrl(url)
     }
   }, [])
 
   // Verificar se voltou do FormSubmit com sucesso
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search)
-    if (urlParams.get('submitted') === 'true') {
-      setShowSuccess(true)
-      // Limpar o parâmetro da URL
-      window.history.replaceState({}, '', window.location.pathname + '#contact')
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search)
+      console.log('Checking URL params:', urlParams.get('submitted'))
       
-      // Esconder mensagem após 5 segundos
-      setTimeout(() => {
-        setShowSuccess(false)
-      }, 5000)
+      if (urlParams.get('submitted') === 'true') {
+        console.log('Success! Showing message')
+        setShowSuccess(true)
+        setIsSubmitting(false)
+        
+        // Limpar o parâmetro da URL após um pequeno delay
+        setTimeout(() => {
+          window.history.replaceState({}, '', window.location.pathname + '#contact')
+        }, 100)
+        
+        // Esconder mensagem após 5 segundos
+        setTimeout(() => {
+          setShowSuccess(false)
+        }, 5000)
+      }
     }
   }, [])
 
