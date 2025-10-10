@@ -51,7 +51,7 @@ export function Skills() {
       bgColor: "bg-slate-800/50 dark:bg-slate-800/30",
       borderColor: "border-cyan-900/30 dark:border-cyan-800/20",
       iconBg: "bg-cyan-500/20",
-      skills: ["SAP BTP", "SAP SD", "SAP MM", "Power BI"],
+      skills: ["SAP BTP", "SAP SD", "SAP MM", "Power BI","SAP TRM", "SAP Debug"],
     },
     {
       title: "Soft Skills",
