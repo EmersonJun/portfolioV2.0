@@ -2,11 +2,27 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, MapPin, Phone } from "lucide-react"
-import { useState } from "react"
+import { Mail, MapPin, Phone, CheckCircle } from "lucide-react"
+import { useState, useEffect } from "react"
 
 export function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showSuccess, setShowSuccess] = useState(false)
+
+  // Verificar se voltou do FormSubmit com sucesso
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search)
+    if (urlParams.get('submitted') === 'true') {
+      setShowSuccess(true)
+      // Limpar o parâmetro da URL
+      window.history.replaceState({}, '', window.location.pathname + '#contact')
+      
+      // Esconder mensagem após 5 segundos
+      setTimeout(() => {
+        setShowSuccess(false)
+      }, 5000)
+    }
+  }, [])
 
   const handleSubmit = () => {
     setIsSubmitting(true)
@@ -23,6 +39,21 @@ export function Contact() {
           <p className="text-lg text-muted-foreground text-center mb-12 text-pretty">
             Se você gostaria de discutir um projeto ou apenas dizer oi, estou sempre disposto a conversar.
           </p>
+
+          {/* Mensagem de Sucesso */}
+          {showSuccess && (
+            <div className="mb-8 p-6 bg-green-500/10 border-2 border-green-500/30 rounded-lg animate-in fade-in slide-in-from-top-4 duration-500">
+              <div className="flex items-center gap-3 text-green-600 dark:text-green-400">
+                <CheckCircle className="h-6 w-6" />
+                <div>
+                  <p className="font-semibold text-lg">Mensagem enviada com sucesso! ✨</p>
+                  <p className="text-sm text-green-600/80 dark:text-green-400/80">
+                    Obrigado pelo contato! Responderei em breve.
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Informações de contato */}
@@ -82,28 +113,16 @@ export function Contact() {
                 className="space-y-6"
                 onSubmit={handleSubmit}
               >
-                {/* ===== CONFIGURAÇÕES DO FORMSUBMIT ===== */}
-                
-                {/* Assunto do email */}
+                {/* Configurações do FormSubmit */}
                 <input type="hidden" name="_subject" value="Nova mensagem do portfólio!" />
-                
-                {/* Desabilitar captcha */}
                 <input type="hidden" name="_captcha" value="false" />
                 
-                {/* Template de tabela (mais organizado) */}
-                <input type="hidden" name="_template" value="table" />
+                {/* Redirecionar de volta para a mesma página com parâmetro */}
+                <input type="hidden" name="_next" value="https://emersonjun.netlify.app/?submitted=true#contact" />
                 
-                {/* Página de redirecionamento após envio */}
-                <input type="hidden" name="_next" value="https://emersonjun.netlify.app/obrigado.html" />
-                
-                {/* Campo honeypot anti-spam (escondido) */}
+                {/* Anti-spam */}
                 <input type="text" name="_honey" style={{ display: 'none' }} />
-                
-                {/* Desabilitar autoresposta padrão */}
-                <input type="hidden" name="_autoresponse" value="Obrigado pelo contato! Responderei em breve." />
 
-                {/* ===== CAMPOS DO FORMULÁRIO ===== */}
-                
                 <div>
                   <Input
                     type="text"
@@ -111,7 +130,6 @@ export function Contact() {
                     placeholder="Seu nome"
                     required
                     minLength={2}
-                    maxLength={100}
                     disabled={isSubmitting}
                     className="bg-card border-border focus:border-primary"
                   />
@@ -129,22 +147,11 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <Input
-                    type="tel"
-                    name="phone"
-                    placeholder="Seu telefone (opcional)"
-                    disabled={isSubmitting}
-                    className="bg-card border-border focus:border-primary"
-                  />
-                </div>
-
-                <div>
                   <Textarea
                     name="message"
                     placeholder="Sua mensagem"
                     required
                     minLength={10}
-                    maxLength={1000}
                     rows={5}
                     disabled={isSubmitting}
                     className="bg-card border-border focus:border-primary resize-none"
