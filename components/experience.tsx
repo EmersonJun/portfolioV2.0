@@ -9,7 +9,7 @@ export function Experience() {
       location: "Curitiba, PR",
       description:
       "Atuo no suporte e manutenção de sistemas SAP, auxiliando na resolução de incidentes e demandas dos usuários. Participo do monitoramento de processos e rotinas críticas, além de colaborar com as equipes funcionais e técnicas para garantir a continuidade e eficiência das operações.",
-      technologies: ["SAP", "ABAP (noções)", "SQL", "Excel", "Service Desk"],
+      technologies: ["SAP", "ABAP (noções)", "Pacote office"],
       achievements: [
       "Reduzi em 30% o tempo de resolução de chamados de suporte",
       "Apoiei na configuração de perfis de usuários e autorizações SAP",
