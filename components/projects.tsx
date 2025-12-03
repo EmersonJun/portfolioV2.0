@@ -16,6 +16,14 @@ export function Projects() {
       live: "https://pokedex-project-ejun.netlify.app/",
     },
     {
+      title: "Cassino Virtual",
+      description:
+        "Cassino virtual feito para um trabalho final de semestre completamente em java.",
+      image: "/cassino.png",
+      technologies: ["Java"],
+      github: "https://github.com/EmersonJun/Trabalho-De-Java-2",
+    },
+    {
       title: "Dasboard Python",
       description:
         "Dashboard para a analise de planilha o exel sobre veiculos automotivos.",
@@ -94,14 +102,7 @@ export function Projects() {
       github: "https://github.com/VictorPisani/Portifolio-Design",
       live: "https://relogio-project-ejun.netlify.app/",
     },
-    {
-      title: "Cassino Virtual",
-      description:
-        "Cassino virtual feito para um trabalho final de semestre completamente em java.",
-      image: "/",
-      technologies: ["Java"],
-      github: "https://github.com/EmersonJun/Trabalho-De-Java-2",
-    },
+    
   ]
 
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0)
