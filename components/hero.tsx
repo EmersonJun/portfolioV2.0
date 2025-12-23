@@ -28,7 +28,7 @@ export function Hero() {
               </div>
               <div>
                 <h1 className="text-4xl lg:text-6xl font-bold text-balance">Emerson Junior</h1>
-                <h2 className="text-xl lg:text-2xl text-primary font-medium">Desenvolvedor Full Stack</h2>
+                <h2 className="text-xl lg:text-2xl text-primary font-medium">Desenvolvedor Back End</h2>
               </div>
             </div>
 
