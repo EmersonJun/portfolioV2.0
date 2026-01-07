@@ -6,15 +6,15 @@ import { Button } from "@/components/ui/button"
 
 export function Projects() {
   const projects = [
-    {
-      title: "Pokedex",
-      description:
-        "Pokedex interativa fieta tom html, css e js ultilizando da pokeAPI para maior interatividade com o usuario.",
-      image: "/Pokedex.png",
-      technologies: ["Html", "CSS", "Js"],
-      github: "https://github.com/EmersonJun/pokedex",
-      live: "https://pokedex-project-ejun.netlify.app/",
-    },
+    // {
+    //   title: "Pokedex",
+    //   description:
+    //     "Pokedex interativa fieta tom html, css e js ultilizando da pokeAPI para maior interatividade com o usuario.",
+    //   image: "/Pokedex.png",
+    //   technologies: ["Html", "CSS", "Js"],
+    //   github: "https://github.com/EmersonJun/pokedex",
+    //   live: "https://pokedex-project-ejun.netlify.app/",
+    // },
     {
       title: "Cassino Virtual",
       description:
@@ -26,56 +26,56 @@ export function Projects() {
     {
       title: "Dasboard Python",
       description:
-        "Dashboard para a analise de planilha o exel sobre veiculos automotivos.",
+        "Dashboard para a analise de planilha o excel sobre veiculos automotivos.",
       image: "/Dash.png",
       technologies: ["Python"],
       github: "https://github.com/EmersonJun/Graficos-PYTHON",
     },
-    {
-      title: "Mario Run",
-      image: "/MarioRun.png",
-      description:
-        "Web-based game inspired by the classic Mario. Developed with JavaScript, HTML, and CSS, focusing on smooth gameplay.",
-      technologies: ["Html", "CSS", "Js"],
-      github: "https://github.com/EmersonJun/mario",
-      live: "https://mariorun-project-ejun.netlify.app/",
-    },
-    {
-      title: "Relogio digital",
-      description:
-        "Pagina web que replica perfeitamente um relogio digital.",
-      image: "/Relogio.png",
-      technologies: ["Html", "CSS", "Js"],
-      github: "https://github.com/EmersonJun/relogio-digital",
-      live: "https://relogio-project-ejun.netlify.app/",
-    },
-    {
-      title: "Conversor de moedas",
-      description:
-        "Sistema web que ultiliza de API para fazer a convercao de valores de dinheiro.",
-      image: "/Conversor.png",
-      technologies: ["Html", "CSS", "Js"],
-      github: "https://github.com/EmersonJun/Conversor-De-Moedas",
-      live: "https://conversor-project-ejun.netlify.app/",
-    },
-    {
-      title: "Randomizador de numeros",
-      image: "/Randomizador.png",
-      description:
-        "Randomizador de numeros feito com js html e css.",
-      technologies: ["Html", "CSS", "Js"],
-      github: "https://github.com/EmersonJun/randomizador-de-numeros",
-      live: "https://randomizador-project-ejun.netlify.app/",
-    },
-    {
-      title: "Pedra papel e tesoura",
-      description:
-        "Sistema web que replica o jogo de pedra papel e tesoura.",
-      image: "/Jokenpo.png",
-      technologies: ["Html", "CSS", "Js"],
-      github: "https://github.com/EmersonJun/jokenp-",
-      live: "https://jokenpo-project-ejun.netlify.app/",
-    },
+    // {
+    //   title: "Mario Run",
+    //   image: "/MarioRun.png",
+    //   description:
+    //     "Web-based game inspired by the classic Mario. Developed with JavaScript, HTML, and CSS, focusing on smooth gameplay.",
+    //   technologies: ["Html", "CSS", "Js"],
+    //   github: "https://github.com/EmersonJun/mario",
+    //   live: "https://mariorun-project-ejun.netlify.app/",
+    // },
+    // {
+    //   title: "Relogio digital",
+    //   description:
+    //     "Pagina web que replica perfeitamente um relogio digital.",
+    //   image: "/Relogio.png",
+    //   technologies: ["Html", "CSS", "Js"],
+    //   github: "https://github.com/EmersonJun/relogio-digital",
+    //   live: "https://relogio-project-ejun.netlify.app/",
+    // },
+    // {
+    //   title: "Conversor de moedas",
+    //   description:
+    //     "Sistema web que ultiliza de API para fazer a convercao de valores de dinheiro.",
+    //   image: "/Conversor.png",
+    //   technologies: ["Html", "CSS", "Js"],
+    //   github: "https://github.com/EmersonJun/Conversor-De-Moedas",
+    //   live: "https://conversor-project-ejun.netlify.app/",
+    // },
+    // {
+    //   title: "Randomizador de numeros",
+    //   image: "/Randomizador.png",
+    //   description:
+    //     "Randomizador de numeros feito com js html e css.",
+    //   technologies: ["Html", "CSS", "Js"],
+    //   github: "https://github.com/EmersonJun/randomizador-de-numeros",
+    //   live: "https://randomizador-project-ejun.netlify.app/",
+    // },
+    // {
+    //   title: "Pedra papel e tesoura",
+    //   description:
+    //     "Sistema web que replica o jogo de pedra papel e tesoura.",
+    //   image: "/Jokenpo.png",
+    //   technologies: ["Html", "CSS", "Js"],
+    //   github: "https://github.com/EmersonJun/jokenp-",
+    //   live: "https://jokenpo-project-ejun.netlify.app/",
+    // },
     {
       title: "Portifolio de edicao",
       description:
