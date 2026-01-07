@@ -100,7 +100,7 @@ export function Projects() {
       image: "/design.png",
       technologies: ["Html", "CSS", "Js"],
       github: "https://github.com/VictorPisani/Portifolio-Design",
-      live: "https://relogio-project-ejun.netlify.app/",
+    
     },
     
   ]
