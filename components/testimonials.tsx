@@ -27,16 +27,6 @@ export function Testimonials() {
       project: "Assumtek",
     },
     {
-      name: "Guilherme Dias",
-      role: "Product and Project Owner",
-      company: "Assumtek",
-      image: "/Gui.png",
-      content:
-        "Profissional extremamente competente e proativo. Não apenas desenvolveu o que pedimos, mas também sugeriu melhorias que tornaram nosso produto muito mais robusto. Parceria de longo prazo garantida!",
-      rating: 5,
-      project: "Assumtek",
-    },
-    {
       name: "Luiz Ricardo",
       role: "Product Owner",
       company: "Assumtek",
