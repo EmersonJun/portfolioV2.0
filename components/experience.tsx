@@ -1,21 +1,64 @@
-import { Calendar, MapPin, Briefcase } from "lucide-react"
+import { Calendar, MapPin, Briefcase } from "lucide-react";
 
 export function Experience() {
   const experiences = [
+    // {
+    //   period: "2026 Abr – Atualmente",
+    //   role: "Rocket Program Trainee",
+    //   company: "Alpar",
+    //   location: "Híbrido",
+    //   description:
+    //     "Participação no Rocket Program com foco em desenvolvimento profissional, resolução de problemas e atuação em ambientes corporativos e tecnológicos. Experiência voltada para aprendizado acelerado, colaboração entre equipes e desenvolvimento de competências técnicas e analíticas aplicadas a projetos e desafios do programa.",
+    //   technologies: [
+    //     "Lógica de Programação",
+    //     "JS",
+    //     "ServiceNow",
+    //     "Metodologias Ágeis",
+    //     "Pacote Office",
+    //   ],
+    //   achievements: [
+    //     "Desenvolvi habilidades de resolução de problemas em ambientes corporativos",
+    //     "Participei de desafios e atividades voltadas à inovação e melhoria contínua",
+    //     "Fortaleci comunicação interpessoal e trabalho em equipe multidisciplinar",
+    //     "Aprimorei capacidade analítica e adaptação a novos processos e tecnologias",
+    //     "Ganhei experiência prática em ambientes empresariais e dinâmicos",
+    //   ],
+    // },
     {
-      period: "2025 Mai – Atualmente",
+      period: "2026 Fev – Atualmente",
+      role: "Rocket Program Trainee",
+      company: "Alpar",
+      location: "Híbrido",
+      description:
+        "Participação no Rocket Program com foco em desenvolvimento profissional, resolução de problemas e atuação em ambientes corporativos e tecnológicos. Experiência voltada para aprendizado acelerado, colaboração entre equipes e desenvolvimento de competências técnicas e analíticas aplicadas a projetos e desafios do programa.",
+      technologies: [
+        "Lógica de Programação",
+        "JS",
+        "ServiceNow",
+        "Metodologias Ágeis",
+        "Pacote Office",
+      ],
+      achievements: [
+        "Desenvolvi habilidades de resolução de problemas em ambientes corporativos",
+        "Participei de desafios e atividades voltadas à inovação e melhoria contínua",
+        "Fortaleci comunicação interpessoal e trabalho em equipe multidisciplinar",
+        "Aprimorei capacidade analítica e adaptação a novos processos e tecnologias",
+        "Ganhei experiência prática em ambientes empresariais e dinâmicos",
+      ],
+    },
+    {
+      period: "2025 Mai – 2025 Nov",
       role: "Suporte SAP",
       company: "Assumtek",
       location: "Curitiba, PR",
       description:
-      "Atuo no suporte e manutenção de sistemas SAP, auxiliando na resolução de incidentes e demandas dos usuários. Participo do monitoramento de processos e rotinas críticas, além de colaborar com as equipes funcionais e técnicas para garantir a continuidade e eficiência das operações.",
+        "Atuo no suporte e manutenção de sistemas SAP, auxiliando na resolução de incidentes e demandas dos usuários. Participo do monitoramento de processos e rotinas críticas, além de colaborar com as equipes funcionais e técnicas para garantir a continuidade e eficiência das operações.",
       technologies: ["SAP", "ABAP (noções)", "Pacote office"],
       achievements: [
-      "Reduzi em 30% o tempo de resolução de chamados de suporte",
-      "Apoiei na configuração de perfis de usuários e autorizações SAP",
-      "Contribuí para treinamentos internos sobre boas práticas de uso do SAP",
-],
-
+        "Reduzi em 30% o tempo de resolução de chamados de suporte",
+        "Apoiei na configuração de perfis de usuários e autorizações SAP",
+        "Contribuí para treinamentos internos sobre boas práticas de uso do SAP",
+      ],
     },
     {
       period: "2019 — 2025 Abr",
@@ -28,7 +71,7 @@ export function Experience() {
       achievements: [
         "Reduzi perdas de estoque em 20% através de controles mais precisos",
         "Implementei planilhas automatizadas para gestão de entradas e saídas",
-        "Organizei inventários periódicos, aumentando a acuracidade dos registros"
+        "Organizei inventários periódicos, aumentando a acuracidade dos registros",
       ],
     },
     // {
@@ -45,7 +88,7 @@ export function Experience() {
     //     "Aprendeu 5 novas tecnologias",
     //   ],
     // },
-  ]
+  ];
 
   return (
     <section id="experience" className="py-20 px-6 bg-card/30">
@@ -74,11 +117,15 @@ export function Experience() {
                             <Calendar className="w-4 h-4" />
                             {exp.period}
                           </div>
-                          <h3 className="text-2xl font-bold text-foreground">{exp.role}</h3>
+                          <h3 className="text-2xl font-bold text-foreground">
+                            {exp.role}
+                          </h3>
                           <div className="flex items-center gap-4 text-muted-foreground">
                             <div className="flex items-center gap-1">
                               <Briefcase className="w-4 h-4" />
-                              <span className="font-medium text-primary">{exp.company}</span>
+                              <span className="font-medium text-primary">
+                                {exp.company}
+                              </span>
                             </div>
                             <div className="flex items-center gap-1">
                               <MapPin className="w-4 h-4" />
@@ -88,14 +135,21 @@ export function Experience() {
                         </div>
                       </div>
 
-                      <p className="text-muted-foreground text-pretty mb-6">{exp.description}</p>
+                      <p className="text-muted-foreground text-pretty mb-6">
+                        {exp.description}
+                      </p>
 
                       {/* Conquistas */}
                       <div className="mb-6">
-                        <h4 className="text-sm font-semibold text-foreground mb-3">Principais Conquistas:</h4>
+                        <h4 className="text-sm font-semibold text-foreground mb-3">
+                          Principais Conquistas:
+                        </h4>
                         <ul className="space-y-2">
                           {exp.achievements.map((achievement, i) => (
-                            <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                            <li
+                              key={i}
+                              className="flex items-start gap-2 text-sm text-muted-foreground"
+                            >
                               <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                               {achievement}
                             </li>
@@ -123,5 +177,5 @@ export function Experience() {
         </div>
       </div>
     </section>
-  )
+  );
 }
