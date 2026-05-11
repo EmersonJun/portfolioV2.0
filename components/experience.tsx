@@ -2,28 +2,30 @@ import { Calendar, MapPin, Briefcase } from "lucide-react";
 
 export function Experience() {
   const experiences = [
-    // {
-    //   period: "2026 Abr – Atualmente",
-    //   role: "Rocket Program Trainee",
-    //   company: "Alpar",
-    //   location: "Híbrido",
-    //   description:
-    //     "Participação no Rocket Program com foco em desenvolvimento profissional, resolução de problemas e atuação em ambientes corporativos e tecnológicos. Experiência voltada para aprendizado acelerado, colaboração entre equipes e desenvolvimento de competências técnicas e analíticas aplicadas a projetos e desafios do programa.",
-    //   technologies: [
-    //     "Lógica de Programação",
-    //     "JS",
-    //     "ServiceNow",
-    //     "Metodologias Ágeis",
-    //     "Pacote Office",
-    //   ],
-    //   achievements: [
-    //     "Desenvolvi habilidades de resolução de problemas em ambientes corporativos",
-    //     "Participei de desafios e atividades voltadas à inovação e melhoria contínua",
-    //     "Fortaleci comunicação interpessoal e trabalho em equipe multidisciplinar",
-    //     "Aprimorei capacidade analítica e adaptação a novos processos e tecnologias",
-    //     "Ganhei experiência prática em ambientes empresariais e dinâmicos",
-    //   ],
-    // },
+    {
+      period: "2026 Abr – Atualmente",
+      role: "Desenvolvedor de Aplicações",
+      company: "LinceAi",
+      location: "Remoto",
+      description:
+        "Atuo no desenvolvimento de uma aplicação voltada ao aprendizado de inglês, participando da criação de funcionalidades, estruturação da aplicação e melhoria da experiência do usuário. Trabalho em colaboração com a equipe no desenvolvimento de soluções escaláveis, aplicando lógica de programação, organização de componentes e boas práticas de desenvolvimento de software.",
+      technologies: [
+        "JavaScript",
+        "React",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "Git",
+        "UI/UX",
+      ],
+      achievements: [
+        "Participei do desenvolvimento de funcionalidades para uma plataforma de aprendizado de idiomas",
+        "Contribuí para a estruturação e organização da arquitetura da aplicação",
+        "Implementei melhorias voltadas à experiência e interação do usuário",
+        "Atuei em ambiente colaborativo utilizando versionamento de código e boas práticas de desenvolvimento",
+        "Desenvolvi experiência prática em construção de aplicações modernas e resolução de problemas técnicos",
+      ],
+    },
     {
       period: "2026 Fev – Atualmente",
       role: "Rocket Program Trainee",
