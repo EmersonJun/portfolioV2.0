@@ -6,7 +6,7 @@ export function Experience() {
       period: "2026 Abr – Atualmente",
       role: "Desenvolvedor de Aplicações",
       company: "LinceAi",
-      location: "Remoto",
+      location: "Presencial",
       description:
         "Atuo no desenvolvimento de uma aplicação voltada ao aprendizado de inglês, participando da criação de funcionalidades, estruturação da aplicação e melhoria da experiência do usuário. Trabalho em colaboração com a equipe no desenvolvimento de soluções escaláveis, aplicando lógica de programação, organização de componentes e boas práticas de desenvolvimento de software.",
       technologies: [
