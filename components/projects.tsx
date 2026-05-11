@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function Projects() {
   const projects = [
@@ -15,6 +15,30 @@ export function Projects() {
     //   github: "https://github.com/EmersonJun/pokedex",
     //   live: "https://pokedex-project-ejun.netlify.app/",
     // },
+    {
+      title: "CookBook Lite",
+      description:
+        "Aplicativo mobile desenvolvido em Kotlin para organizacao e consulta de receitas culinarias, com foco em experiencia do usuario, navegacao intuitiva e arquitetura limpa.",
+      image: "/cookbook.png",
+      technologies: ["Kotlin", "Android Studio", "SQLite"],
+      github: "https://github.com/EmersonJun/CookBookLite",
+    },
+    {
+      title: "Cafe Experience",
+      description:
+        "Simulador mobile de cafeteria desenvolvido em Kotlin, permitindo gerenciamento de pedidos, cardapio e fluxo de atendimento com foco em logica de negocio e interface moderna.",
+      image: "/cafeteria.png",
+      technologies: ["Kotlin", "Android Studio", "Firebase"],
+      github: "https://github.com/EmersonJun/CafeteriaApp",
+    },
+    {
+      title: "Verdade ou Desafio",
+      description:
+        "Aplicativo mobile interativo desenvolvido em Kotlin com desafios dinamicos, sistema de categorias e interface envolvente para experiencias sociais entre amigos.",
+      image: "/verdadeoudesafio.png",
+      technologies: ["Kotlin", "Android Studio", "UI/UX"],
+      github: "https://github.com/EmersonJun/Verdade-ou-Desafio-App",
+    },
     {
       title: "Cassino Virtual",
       description:
@@ -100,20 +124,20 @@ export function Projects() {
       image: "/design.png",
       technologies: ["Html", "CSS", "Js"],
       github: "https://github.com/VictorPisani/Portifolio-Design",
-      
     },
-    
-  ]
+  ];
 
-  const [currentProjectIndex, setCurrentProjectIndex] = useState(0)
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
 
   const nextProject = () => {
-    setCurrentProjectIndex((prev) => (prev + 1) % projects.length)
-  }
+    setCurrentProjectIndex((prev) => (prev + 1) % projects.length);
+  };
 
   const prevProject = () => {
-    setCurrentProjectIndex((prev) => (prev - 1 + projects.length) % projects.length)
-  }
+    setCurrentProjectIndex(
+      (prev) => (prev - 1 + projects.length) % projects.length,
+    );
+  };
 
   return (
     <section id="projects" className="py-16 px-6">
@@ -127,7 +151,9 @@ export function Projects() {
             <div className="overflow-hidden rounded-lg">
               <div
                 className="flex transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentProjectIndex * 100}%)` }}
+                style={{
+                  transform: `translateX(-${currentProjectIndex * 100}%)`,
+                }}
               >
                 {projects.map((project, index) => (
                   <div key={index} className="w-full flex-shrink-0">
@@ -141,9 +167,13 @@ export function Projects() {
                       </div>
 
                       <div className="p-4 space-y-3">
-                        <h3 className="text-lg font-semibold text-foreground">{project.title}</h3>
+                        <h3 className="text-lg font-semibold text-foreground">
+                          {project.title}
+                        </h3>
 
-                        <p className="text-muted-foreground text-pretty text-sm line-clamp-2">{project.description}</p>
+                        <p className="text-muted-foreground text-pretty text-sm line-clamp-2">
+                          {project.description}
+                        </p>
 
                         <div className="flex flex-wrap gap-2">
                           {project.technologies.map((tech) => (
@@ -163,23 +193,31 @@ export function Projects() {
                             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent text-xs"
                             asChild
                           >
-                            <a href={project.github} target="_blank" rel="noopener noreferrer">
+                            <a
+                              href={project.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <Github className="mr-1 h-3 w-3" />
                               Código
                             </a>
                           </Button>
                           {project.live && (
-                          <Button
-                            size="sm"
-                            className="bg-primary text-primary-foreground hover:bg-accent text-xs"
-                            asChild
-                          >
-                            <a href={project.live} target="_blank" rel="noopener noreferrer">
-                              <ExternalLink className="mr-1 h-3 w-3" />
-                              Ver Projeto
-                            </a>
-                          </Button>
-                        )}
+                            <Button
+                              size="sm"
+                              className="bg-primary text-primary-foreground hover:bg-accent text-xs"
+                              asChild
+                            >
+                              <a
+                                href={project.live}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                <ExternalLink className="mr-1 h-3 w-3" />
+                                Ver Projeto
+                              </a>
+                            </Button>
+                          )}
                         </div>
                       </div>
                     </div>
@@ -218,5 +256,5 @@ export function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }

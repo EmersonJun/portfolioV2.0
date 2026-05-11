@@ -52,7 +52,7 @@ export function Experience() {
       period: "2025 Mai – 2025 Nov",
       role: "Suporte SAP",
       company: "Assumtek",
-      location: "Curitiba, PR",
+      location: "Hibrido",
       description:
         "Atuo no suporte e manutenção de sistemas SAP, auxiliando na resolução de incidentes e demandas dos usuários. Participo do monitoramento de processos e rotinas críticas, além de colaborar com as equipes funcionais e técnicas para garantir a continuidade e eficiência das operações.",
       technologies: ["SAP", "ABAP (noções)", "Pacote office"],
