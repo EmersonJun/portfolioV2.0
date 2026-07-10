@@ -62,20 +62,17 @@ export function Education() {
               viewport={{ once: true }}
               className="relative mb-8 last:mb-0"
             >
-              {/* Timeline line */}
               {index < educationData.length - 1 && (
                 <div className="absolute left-6 top-16 w-0.5 h-24 bg-primary/30 hidden md:block" />
               )}
 
               <div className="flex flex-col md:flex-row items-start gap-6 p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
-                {/* Icon */}
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <education.icon className="w-6 h-6 text-primary" />
                   </div>
                 </div>
 
-                {/* Content */}
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                     <h3 className="text-xl font-semibold text-foreground">{education.course}</h3>

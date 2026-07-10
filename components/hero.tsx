@@ -20,7 +20,6 @@ export function Hero() {
     <section className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Conteúdo principal */}
           <div className={`space-y-8 ${mounted ? "animate-fade-in-up" : "opacity-0"}`}>
             <div className="flex items-center gap-6 mb-8">
               <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full overflow-hidden border-4 border-primary/20 bg-card">
@@ -55,7 +54,6 @@ export function Hero() {
               </Button>
             </div>
 
-            {/* Links sociais */}
             <div className="flex gap-6 pt-4">
               <a
                 href="https://github.com/EmersonJun"
@@ -79,7 +77,6 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Área visual/código */}
           <div className={`${mounted ? "animate-fade-in-up" : "opacity-0"} lg:delay-200`}>
             <div className="bg-card border border-border rounded-lg p-6 font-mono text-sm">
               <div className="flex items-center gap-2 mb-4">

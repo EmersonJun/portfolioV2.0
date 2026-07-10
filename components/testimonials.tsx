@@ -59,30 +59,25 @@ export function Testimonials() {
             Feedback de clientes e parceiros que confiaram em meu trabalho
           </p>
 
-          {/* Carrossel de testemunhos */}
           <div className="relative">
             <div className="bg-card border border-border rounded-2xl p-8 lg:p-12 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
-              {/* Quote icon */}
               <div className="flex justify-center mb-6">
                 <div className="p-3 bg-primary/10 rounded-full border border-primary/20">
                   <Quote className="w-6 h-6 text-primary" />
                 </div>
               </div>
 
-              {/* Conteúdo do testemunho */}
               <div className="text-center space-y-6">
                 <p className="text-lg lg:text-xl text-muted-foreground italic leading-relaxed">
                   "{testimonials[currentIndex].content}"
                 </p>
 
-                {/* Rating */}
                 <div className="flex justify-center gap-1">
                   {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
 
-                {/* Informações do cliente */}
                 <div className="flex flex-col items-center gap-4">
                   <img
                     src={testimonials[currentIndex].image || "/placeholder.svg"}
@@ -100,7 +95,6 @@ export function Testimonials() {
               </div>
             </div>
 
-            {/* Controles de navegação */}
             <div className="flex justify-center items-center gap-4 mt-8">
               <Button
                 variant="outline"
@@ -111,7 +105,6 @@ export function Testimonials() {
                 <ChevronLeft className="w-4 h-4" />
               </Button>
 
-              {/* Indicadores */}
               <div className="flex gap-2">
                 {testimonials.map((_, index) => (
                   <button
@@ -135,7 +128,6 @@ export function Testimonials() {
             </div>
           </div>
 
-          {/* Grid de logos/empresas */}
           <div className="mt-16">
             <p className="text-center text-muted-foreground mb-8">Empresas que confiaram no meu trabalho</p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">

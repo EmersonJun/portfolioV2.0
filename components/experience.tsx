@@ -101,18 +101,15 @@ export function Experience() {
           </h2>
 
           <div className="relative">
-            {/* Linha vertical */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary/20 hidden lg:block"></div>
 
             <div className="space-y-12">
               {experiences.map((exp, index) => (
                 <div key={index} className="group relative">
-                  {/* Ponto na linha do tempo */}
                   <div className="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background hidden lg:block group-hover:scale-125 transition-transform"></div>
 
                   <div className="lg:ml-20">
                     <div className="bg-card border border-border rounded-xl p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
-                      {/* Header da experiência */}
                       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
                         <div className="space-y-2">
                           <div className="flex items-center gap-2 text-sm text-primary font-mono">
@@ -141,7 +138,6 @@ export function Experience() {
                         {exp.description}
                       </p>
 
-                      {/* Conquistas */}
                       <div className="mb-6">
                         <h4 className="text-sm font-semibold text-foreground mb-3">
                           Principais Conquistas:
@@ -159,7 +155,6 @@ export function Experience() {
                         </ul>
                       </div>
 
-                      {/* Tecnologias */}
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
                           <span

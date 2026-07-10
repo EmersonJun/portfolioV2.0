@@ -28,8 +28,7 @@ export function Contact() {
       if (response.ok) {
         setShowSuccess(true)
         form.reset()
-        
-        // Esconder mensagem após 5 segundos
+
         setTimeout(() => {
           setShowSuccess(false)
         }, 5000)
@@ -53,7 +52,6 @@ export function Contact() {
             Se você gostaria de discutir um projeto ou apenas dizer oi, estou sempre disposto a conversar.
           </p>
 
-          {/* Mensagem de Sucesso */}
           {showSuccess && (
             <div className="mb-8 p-6 bg-green-500/10 border-2 border-green-500/30 rounded-lg animate-in fade-in slide-in-from-top-4 duration-500">
               <div className="flex items-center gap-3 text-green-600 dark:text-green-400">
@@ -69,7 +67,6 @@ export function Contact() {
           )}
 
           <div className="grid lg:grid-cols-2 gap-12">
-            {/* Informações de contato */}
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-semibold mb-6">Informações de Contato</h3>
@@ -118,7 +115,6 @@ export function Contact() {
               </div>
             </div>
 
-            {/* Formulário */}
             <div>
               <form 
                 action="https://formsubmit.co/emersonnjunior2006@gmail.com" 
