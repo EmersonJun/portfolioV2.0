@@ -3,12 +3,9 @@ import { Calendar, MapPin, Briefcase } from "lucide-react";
 export function Experience() {
   const experiences = [
     {
-      period: "2026 Abr – Atualmente",
-      role: "Desenvolvedor de Aplicações",
-      company: "LinceAi",
+      company: "Cima Empreendimentos",
+      products: ["LinceAi", "Macropec"],
       location: "Presencial",
-      description:
-        "Atuo no desenvolvimento de uma aplicação voltada ao aprendizado de inglês, participando da criação de funcionalidades, estruturação da aplicação e melhoria da experiência do usuário. Trabalho em colaboração com a equipe no desenvolvimento de soluções escaláveis, aplicando lógica de programação, organização de componentes e boas práticas de desenvolvimento de software.",
       technologies: [
         "JavaScript",
         "React",
@@ -18,16 +15,33 @@ export function Experience() {
         "Git",
         "UI/UX",
       ],
-      achievements: [
-        "Participei do desenvolvimento de funcionalidades para uma plataforma de aprendizado de idiomas",
-        "Contribuí para a estruturação e organização da arquitetura da aplicação",
-        "Implementei melhorias voltadas à experiência e interação do usuário",
-        "Atuei em ambiente colaborativo utilizando versionamento de código e boas práticas de desenvolvimento",
-        "Desenvolvi experiência prática em construção de aplicações modernas e resolução de problemas técnicos",
+      roles: [
+        {
+          title: "Desenvolvedor Júnior",
+          period: "2026 Jul – Atualmente",
+          description:
+            "Atuo no desenvolvimento dos produtos digitais da empresa — como a LinceAi, voltada ao aprendizado de inglês, e a Macropec — criando funcionalidades, estruturando as aplicações e melhorando a experiência do usuário com soluções escaláveis e boas práticas de desenvolvimento.",
+          achievements: [
+            "Assumi a posição de desenvolvedor júnior após o período de estágio",
+            "Desenvolvi novas funcionalidades para os produtos da empresa",
+            "Contribuí para a arquitetura e organização de componentes das aplicações",
+          ],
+        },
+        {
+          title: "Estágio em Desenvolvimento",
+          period: "2026 Abr – 2026 Jul",
+          description:
+            "Iniciei na equipe de desenvolvimento como estagiário, participando da criação de funcionalidades e da estruturação das aplicações, aplicando lógica de programação e boas práticas em ambiente colaborativo.",
+          achievements: [
+            "Participei do desenvolvimento de funcionalidades para os produtos da empresa",
+            "Implementei melhorias voltadas à experiência e interação do usuário",
+            "Atuei em ambiente colaborativo utilizando versionamento de código",
+          ],
+        },
       ],
     },
     {
-      period: "2026 Fev – Atualmente",
+      period: "2026 Fev – 2026 Jul",
       role: "Rocket Program Trainee",
       company: "Alpar",
       location: "Híbrido",
@@ -49,17 +63,32 @@ export function Experience() {
       ],
     },
     {
-      period: "2025 Mai – 2025 Nov",
-      role: "Suporte SAP",
       company: "Assumtek",
-      location: "Hibrido",
-      description:
-        "Atuo no suporte e manutenção de sistemas SAP, auxiliando na resolução de incidentes e demandas dos usuários. Participo do monitoramento de processos e rotinas críticas, além de colaborar com as equipes funcionais e técnicas para garantir a continuidade e eficiência das operações.",
+      location: "Híbrido",
       technologies: ["SAP", "ABAP (noções)", "Pacote office"],
-      achievements: [
-        "Reduzi em 30% o tempo de resolução de chamados de suporte",
-        "Apoiei na configuração de perfis de usuários e autorizações SAP",
-        "Contribuí para treinamentos internos sobre boas práticas de uso do SAP",
+      roles: [
+        {
+          title: "Suporte SAP",
+          period: "2025 Ago – 2025 Nov",
+          description:
+            "Atuei no suporte e manutenção de sistemas SAP, auxiliando na resolução de incidentes e demandas dos usuários. Participei do monitoramento de processos e rotinas críticas, além de colaborar com as equipes funcionais e técnicas para garantir a continuidade e eficiência das operações.",
+          achievements: [
+            "Reduzi em 30% o tempo de resolução de chamados de suporte",
+            "Apoiei na configuração de perfis de usuários e autorizações SAP",
+            "Contribuí para treinamentos internos sobre boas práticas de uso do SAP",
+          ],
+        },
+        {
+          title: "Estagiário de Produto",
+          period: "2025 Mai – 2025 Jul",
+          description:
+            "Iniciei na Assumtek como estagiário na área de produto, apoiando o time no acompanhamento de demandas, na organização de processos e no entendimento das necessidades dos usuários, desenvolvendo visão de produto e colaboração entre times.",
+          achievements: [
+            "Apoiei o time de produto no levantamento e organização de demandas",
+            "Desenvolvi visão de produto e entendimento das necessidades dos usuários",
+            "Colaborei entre equipes técnicas e funcionais",
+          ],
+        },
       ],
     },
     {
@@ -76,20 +105,6 @@ export function Experience() {
         "Organizei inventários periódicos, aumentando a acuracidade dos registros",
       ],
     },
-    // {
-    //   period: "2020 — 2022",
-    //   role: "Desenvolvedor Junior",
-    //   company: "AgencyABC",
-    //   location: "Rio de Janeiro, RJ",
-    //   description:
-    //     "Trabalhei em projetos diversos para clientes de diferentes setores, desde landing pages até aplicações web complexas. Aprendi a trabalhar com prazos apertados e requisitos em constante mudança.",
-    //   technologies: ["HTML", "CSS", "JavaScript", "WordPress"],
-    //   achievements: [
-    //     "Entregou mais de 50 projetos",
-    //     "Manteve 98% de satisfação do cliente",
-    //     "Aprendeu 5 novas tecnologias",
-    //   ],
-    // },
   ];
 
   return (
@@ -110,50 +125,105 @@ export function Experience() {
 
                   <div className="lg:ml-20">
                     <div className="bg-card border border-border rounded-xl p-8 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
-                      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
-                        <div className="space-y-2">
-                          <div className="flex items-center gap-2 text-sm text-primary font-mono">
-                            <Calendar className="w-4 h-4" />
-                            {exp.period}
-                          </div>
-                          <h3 className="text-2xl font-bold text-foreground">
-                            {exp.role}
-                          </h3>
-                          <div className="flex items-center gap-4 text-muted-foreground">
-                            <div className="flex items-center gap-1">
-                              <Briefcase className="w-4 h-4" />
-                              <span className="font-medium text-primary">
+                      {exp.roles ? (
+                        <>
+                          <div className="mb-6">
+                            <div className="flex items-center gap-2 mb-2">
+                              <Briefcase className="w-5 h-5 text-primary" />
+                              <h3 className="text-2xl font-bold text-foreground">
                                 {exp.company}
-                              </span>
+                              </h3>
                             </div>
-                            <div className="flex items-center gap-1">
-                              <MapPin className="w-4 h-4" />
-                              <span>{exp.location}</span>
+                            <div className="flex flex-wrap items-center gap-4 text-muted-foreground">
+                              {exp.products && (
+                                <span className="font-medium text-primary">
+                                  {exp.products.join(" · ")}
+                                </span>
+                              )}
+                              <div className="flex items-center gap-1">
+                                <MapPin className="w-4 h-4" />
+                                <span>{exp.location}</span>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
 
-                      <p className="text-muted-foreground text-pretty mb-6">
-                        {exp.description}
-                      </p>
+                          <div className="relative border-l-2 border-primary/20 pl-6 space-y-8 mb-6">
+                            {exp.roles.map((role, i) => (
+                              <div key={i} className="relative">
+                                <div className="absolute -left-[31px] top-1 w-3.5 h-3.5 bg-primary rounded-full border-4 border-card"></div>
+                                <div className="flex items-center gap-2 text-sm text-primary font-mono mb-1">
+                                  <Calendar className="w-4 h-4" />
+                                  {role.period}
+                                </div>
+                                <h4 className="text-xl font-semibold text-foreground mb-2">
+                                  {role.title}
+                                </h4>
+                                <p className="text-muted-foreground text-pretty mb-3">
+                                  {role.description}
+                                </p>
+                                <ul className="space-y-2">
+                                  {role.achievements.map((achievement, a) => (
+                                    <li
+                                      key={a}
+                                      className="flex items-start gap-2 text-sm text-muted-foreground"
+                                    >
+                                      <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                      {achievement}
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                            <div className="space-y-2">
+                              <div className="flex items-center gap-2 text-sm text-primary font-mono">
+                                <Calendar className="w-4 h-4" />
+                                {exp.period}
+                              </div>
+                              <h3 className="text-2xl font-bold text-foreground">
+                                {exp.role}
+                              </h3>
+                              <div className="flex items-center gap-4 text-muted-foreground">
+                                <div className="flex items-center gap-1">
+                                  <Briefcase className="w-4 h-4" />
+                                  <span className="font-medium text-primary">
+                                    {exp.company}
+                                  </span>
+                                </div>
+                                <div className="flex items-center gap-1">
+                                  <MapPin className="w-4 h-4" />
+                                  <span>{exp.location}</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
 
-                      <div className="mb-6">
-                        <h4 className="text-sm font-semibold text-foreground mb-3">
-                          Principais Conquistas:
-                        </h4>
-                        <ul className="space-y-2">
-                          {exp.achievements.map((achievement, i) => (
-                            <li
-                              key={i}
-                              className="flex items-start gap-2 text-sm text-muted-foreground"
-                            >
-                              <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                              {achievement}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                          <p className="text-muted-foreground text-pretty mb-6">
+                            {exp.description}
+                          </p>
+
+                          <div className="mb-6">
+                            <h4 className="text-sm font-semibold text-foreground mb-3">
+                              Principais Conquistas:
+                            </h4>
+                            <ul className="space-y-2">
+                              {exp.achievements.map((achievement, i) => (
+                                <li
+                                  key={i}
+                                  className="flex items-start gap-2 text-sm text-muted-foreground"
+                                >
+                                  <div className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                                  {achievement}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </>
+                      )}
 
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech) => (
