@@ -95,7 +95,7 @@ export function Hero() {
                 </div>
                 <div className="ml-4">
                   <span className="text-green-400">role</span>:{" "}
-                  <span className="text-orange-300">'Full Stack Developer'</span>,
+                  <span className="text-orange-300">'Back End Developer'</span>,
                 </div>
                 <div className="ml-4">
                   <span className="text-green-400">skills</span>: [
